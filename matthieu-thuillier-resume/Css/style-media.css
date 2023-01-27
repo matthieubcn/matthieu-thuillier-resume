@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Menu burger */
+
+
+/* Iphone + * big size*/
+
+@media only screen and (max-width: 430px){
+    * {
+        font-family: 'Poppins';
+    }
+
+    body{
+        max-width: 450px;
+    }
+}
+
+/* TO be removed */
+@media only screen and (max-width: 430px){
+    nav {
+        display: none;
+    }
+
+}
+
+/* About me resize the container */
+
+@media only screen and (max-width: 430px){
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-me-container{
+        width: 100%;
+    }
+    .bio-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #about-me h2 {
+        margin-top: 20px;
+    }
+     #about-me p {
+        margin-top: 20px;
+     }
+
+     .adress{
+        margin-left: 30px;
+     }
+}
+
+
+/* Professional skilss */
+
+@media only screen and (max-width: 430px){
+
+#professional-skills{
+    display: flex;
+    flex-direction: column
+    }
+
+    .professional-skills-left,
+    .professional-skills-right {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Professional experiences*/
+
+
+@media only screen and (max-width: 430px){
+
+    #work-experience h3{
+        font-size: 1.4rem;
+    }
+
+.vl-1{
+    border-left: 2px solid #ccc;
+    height: 330px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-2{
+    border-left: 2px solid #ccc;
+    height: 890px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-3{
+    border-left: 2px solid #ccc;
+    height: 490px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-4{
+    border-left: 2px solid #ccc;
+    height: 140px;
+    float: left;
+    margin-left: 14px;
+}
+
+}
+
+
+
+/* Contact form */
+
+@media only screen and (max-width: 430px){
+    iframe{
+        width:380px;
+        height:380px;
+        margin: 20px auto;  
+    }
+    form{
+        width: 100%;
+    }
+}
+
+/* footer */
+
+
+@media only screen and (max-width: 430px){
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-credit-container{
+        display: flex;
+        flex-direction: column;
+    }
+    footer p{
+        margin: 0;
+    }
+    .footer-logo img {
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+
+    #references {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #reference-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #reference-container-left, #reference-container-right{
+        width: 100%;
+    }
+
+}
+

@@ -4,7 +4,7 @@
 /* Universal connector */
 
 * {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     /* reset the font size */
     font-size: 10px;
     /* reset the margin */
@@ -189,7 +189,7 @@ h2 {
 
 #hero nav img {
     padding: 0 20px;
-    opacity: 100%;
+    filter: invert(100%);
 }
 
 .hero-logo {
@@ -338,10 +338,10 @@ h2 {
     margin-top: 10px;
 }
 
-.professional-skills-left,
-.professional-skills-right {
-    width: 50%;
-}
+    .professional-skills-left,
+    .professional-skills-right {
+        width: 50%;
+    }
 
 .skills-small-box {
     width: 90%;
@@ -391,9 +391,6 @@ h2 {
     font-size:1.4rem
 }
 
-
-
-
 /* professionnal experiences */
 
 #work-experience{
@@ -435,7 +432,6 @@ h2 {
     color:#F77979; /* Change the color */
 }
 
-
 #work-experience article ul li{
     font-size: 1.4rem;
     line-height: 150%;
@@ -473,7 +469,7 @@ h2 {
 
 .calendar-container{
     display: flex;
-    margin-left:50px;
+    margin-left:30px;
 }
 
 .calendar-container{
@@ -549,6 +545,15 @@ h2 {
     height: 40px;
     float: left;
     margin-left: 11px;
+}
+
+
+.vl-6{
+    border-left: 2px solid #60BDF7;
+    height: 80px;
+    float: left;
+    margin-left: 11px;
+    margin-top: 60px;
 }
 
 
@@ -631,9 +636,6 @@ h2 {
 }
 
 
-
-
-
 #hidden2 li a {
     text-decoration: none;
  }
@@ -663,8 +665,6 @@ h2 {
 #hidden2, #hidden2-button{
     display: none;
 }
-
-
 
 #hidden3 li a {
     text-decoration: none;
@@ -696,8 +696,6 @@ h2 {
     display: none;
 }
 
-
-
 #hidden4 li a {
     text-decoration: none;
  }
@@ -728,7 +726,6 @@ h2 {
     display: none;
 }
 
-
 #hidden5 li a {
     text-decoration: none;
  }
@@ -757,6 +754,33 @@ h2 {
 
 #hidden5, #hidden5-button{
     display: none;
+}
+
+/* stars section */
+
+
+.fa-star {
+	color:black;
+	cursor: pointer;
+	padding: 0.0625rem;
+    background-color: red;
+}
+.fa-star.gold {
+	color: #ffdc0f;
+    background-color: red;
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    background-color: red;
+}
+
+.stars {
+display: inline-flex;
+justify-content: center;
+font-size: 3em;
 }
 
 
@@ -789,6 +813,12 @@ h2 {
 #education h3{
     font-size: 1.7rem;
     margin-left: 10px;
+}
+
+#education h4{
+    font-size: 1.3rem;
+    margin-left: 20px;
+
 }
 
 #education article ul li{
@@ -996,7 +1026,11 @@ form  .submit-button:active{
     color: yellow
 }
 
+iframe{
+    width:500px;
+    height:500px;
 
+}
 /* footer part */
 
 footer{

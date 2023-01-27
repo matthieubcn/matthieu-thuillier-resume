@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthieu Thuillier CV 20203</title>
 
-    <!-- CSS file -->
-
+    <!-- CSs file links -->
     <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/style-media.css">
 
     <!-- External link to insert the smileys -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/emoji.css/dist/emoji.min.css"
     />
+
+    <!-- Fade in external link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <header>
+
       <div id="top-menu">
         <span>Matthieu Thuillier</span>
 
@@ -110,7 +115,7 @@
             <li><span class="ec ec-man"></span>Age: 36 </li>
             <li><span class="ec ec-mailbox-with-mail"></span>Email: thuillier.matthieu@hotmail.fr</li>
             <li><span class="ec ec-iphone"></span>Phone: +34 602 400 303</li>
-            <li><span class="ec ec-house"></span>Adress : 17 carrer de Potugalete<br><span> 08014 Barcelona</span></li>
+            <li><span class="ec ec-house"></span>Adress : 17 carrer de Potugalete<br><span class="adress"> 08014 Barcelona</span></li>
           </ul>
         </div>
       </section>
@@ -177,8 +182,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -211,6 +216,10 @@
               Power BI (Dashboards-Reports).
             </li>
           </ul>
+          
+
+
+          
 
           <button
             id="showmore-button"
@@ -223,13 +232,19 @@
           <div id="hidden">
             <span>Skills learned</span>
 
+            <div class="vl-6"></div>
+
+
             <ul>
               <li><a href="">Team Management</a></li>
               <li><a href="">Monitoring KPIS</a></li>
               <li><a href="">Team Management</a></li>
               <li><a href="">Reportings KPIS</a></li>
-            </ul>
-          </div>
+            </ul>`
+          
+
+           
+          
 
           <button
             onclick="closeMore()"
@@ -238,12 +253,14 @@
           >
             Close Skills
           </button>
+
+          </div>
         </article>
 
         <article class="block-experience">
-          <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+          <div class="top-block-experience-container" >
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
 
@@ -342,9 +359,9 @@
         </article>
 
         <article class="block-experience">
-          <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+          <div class="top-block-experience-container" >
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -420,8 +437,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -481,8 +498,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -545,8 +562,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -613,8 +630,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle" data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -647,8 +664,8 @@
 
         <article class="block-experience">
           <div class="top-block-experience-container">
-            <div class="big-circle">
-              <div class="small-circle"></div>
+            <div class="big-circle"data-aos="fade-in">
+              <div class="small-circle" data-aos="fade-in"></div>
             </div>
 
             <div class="title-container">
@@ -686,17 +703,14 @@
         <article class="block-school">
 
             <div class="top-block-experience-container">
-                <div class="big-circle2">
+                <div class="big-circle2"data-aos="fade-out">
                   <div class="small-circle2"></div>
                 </div>
-          <h3>SciencesPo <span> a Lille</span></h3>
+                <h3>SciencesPo <span> a Lille</span></h3>
 
             </div>
 
             <div class="vl-5"></div>
-
-
-
           <div class="calendar-container">
             <span class="ec ec-calendar calendar-smilley"></span>
             <h4>January09- December09</h4>
@@ -709,11 +723,11 @@
         <article class="block-school">
 
             <div class="top-block-experience-container">
-                <div class="big-circle2">
-                  <div class="small-circle2"></div>
+                <div class="big-circle2" data-aos="fade-out">
+                  <div class="small-circle2" data-aos="fade-out"></div>
                 </div>
           <h3>
-            Iscid nternational School of business
+            Isci International School of business
             <span>à Saint-Omer (62000)</span>
           </h3>
             </div>
@@ -736,8 +750,8 @@
         <article class="block-school">
 
             <div class="top-block-experience-container">
-                <div class="big-circle2">
-                  <div class="small-circle2"></div>
+                <div class="big-circle2" data-aos="fade-out">
+                  <div class="small-circle2" data-aos="fade-out"></div>
                 </div>
             <h3>
               Extra Certifications
@@ -845,8 +859,6 @@
         <div class="form-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.0427505930415!2d2.1428569!3d41.37315590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49882fbbdbc23%3A0xffd2d47a2bfaf92c!2sCarrer%20de%20Portugalete%2C%2017%2C%2008014%20Barcelona!5e0!3m2!1sfr!2ses!4v1674738389379!5m2!1sfr!2ses"
-            width="500"
-            height="400"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -882,5 +894,12 @@
 
     <!-- JavaScript file -->
     <script src="./JavaScript/myscript.js"></script>
+
+    <!-- Fade in external link -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
