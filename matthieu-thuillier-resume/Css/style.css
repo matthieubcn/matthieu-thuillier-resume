@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Universal connector */
+
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* reset the font size */
+    font-size: 10px;
+    /* reset the margin */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #16191B;
+    margin: 0 auto;
+    max-width: 1100px;
+    background-color: #F2F2F2
+}
+
+/* This boxes is reused for all the sections */
+
+.shadow-box {
+    box-shadow: 2px 2px 2px #808080;
+    border-radius: 10px;
+    margin: 30px 0;
+    background-color: white;
+    padding:30px 0;
+}
+
+
+/* Top menu CSS */
+
+header #top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+}
+
+#top-menu span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#top-menu nav ul {
+    display: flex;
+}
+
+#top-menu nav li {
+    list-style: none;
+    padding: 3%
+}
+
+#top-menu nav li a {
+    font-size: 1.5rem;
+    text-decoration: none
+}
+
+#top-menu nav li a:visited {
+    color: #808080
+}
+
+#top-menu nav li:nth-child(1) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(2) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F77979;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(3) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(4) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F77979;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(5) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(6) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F7F692;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+
+/* Hero Section */
+
+/* Must the find the way to filter the background */
+
+#hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shadow-box {
+    box-shadow: 2px 2px 2px #808080;
+    border-radius: 10px;
+}
+
+.background-picture {
+    /* background-image: url('https://demo.templateflip.com/material-resume/images/header-background.jpg'); */
+    background-repeat: no-repeat;
+    background-image: url('../images/background-g91c763fe1_1280.jpg');
+    
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px); */
+}
+
+/* .filter{
+    backdrop-filter: blur(46px);
+    background-color:rgba(255,255,255,0.5);
+    mix-blend-mode: soft-light;
+    
+} */
+
+#hero .avatar {
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
+
+#hero h1,
+h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 9999;
+    margin-top: 10px;
+    margin-bottom:20px
+    
+}
+
+.hero-menu {
+    display: flex;
+    margin-top: 10px;
+}
+
+#hero .hero-menu li {
+    list-style: none;
+}
+
+.hero-button-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#hero nav img {
+    padding: 0 20px;
+    opacity: 100%;
+}
+
+.hero-logo {
+    width: 30px;
+    max-width: 40px;
+}
+
+
+/* Button section for the hero using 2d  */
+
+.hero-button-container a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin: 10px 20px;
+    color: white;
+}
+
+.hero-button-one {
+    background-color: #60BDF7;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 30px
+}
+
+/* Change the color of the button */
+.hero-button-two {
+    background-color: #60BDF7;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 30px
+}
+
+.hero-button-container a:hover,
+.hero-button-container a:active {
+    color: whitesmoke;
+}
+
+.hero-button-one:active {
+    background-color: #4B86AB;
+}
+
+.hero-button-two:active {
+    background-color: #F77979;
+    transition-duration: 100ms;
+}
+
+
+/* About me section */
+
+#about-me {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+/* resize the 2 containers of about me  */
+
+.about-me-container {
+    width: 60%;
+    flex-grow: 2;
+    flex-shrink: 2;
+    margin-right: 30px;
+}
+
+.bio-container {
+    width: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+    color: #808080;
+}
+
+#about-me p {
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    padding-right: 10%;
+}
+
+#about-me p:last-child {
+    padding-bottom: 5%;
+}
+
+#about-me span {
+    font-size: 1.4rem;
+    color: #4B86AB;
+    font-weight: 600;
+}
+
+#about-me span:hover {
+    color: #F77979;
+}
+
+
+
+
+/* about me left section */
+
+#bio ul {
+    list-style: none;
+}
+
+#bio ul li {
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+#bio ul li span{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#bio ul li:first-child{
+    margin-top: 10px;
+}
+/* CSS professional skills */
+
+#professional-skills {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+
+}
+
+#professional-skills span {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* extand to 100% to push it to the next row */
+#professional-skills h2 {
+    font-size: 2rem;
+    color: #16191B;
+    display: inline-block;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+#professional-skills h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.professional-skills-left,
+.professional-skills-right {
+    width: 50%;
+}
+
+.skills-small-box {
+    width: 90%;
+    background-color: #F2F2F2;
+    height: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.skills-progress-advanced {
+    width: 90%;
+    background-color: #4B86AB;
+    height: 14px;
+    margin: auto 0;
+    border-radius: 10px;
+}
+
+.skills-progress-intermediate {
+    width: 80%;
+    background-color: #F7F692;
+    height: 14px;
+    margin: auto 0;
+    border-radius: 10px;
+}
+
+.skills-progress-intermediate-one {
+    width: 70%;
+    background-color: #F7F692;
+    height: 14px;
+    margin: auto 0;
+    border-radius: 10px;
+}
+
+/* professionnal experiences */
+
+#work-experience{
+    padding-left: 2%;
+}
+
+#work-experience h2{
+    font-size: 2rem;
+    color: #16191B;
+}
+
+#work-experience article ul{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+#work-experience article ul li:first-child{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: ' 🚀';
+}
+
+#work-experience article ul li:before{
+    font-size: 1.4rem;
+    line-height: 150%;
+    content: "\2022";
+    color: #F77979; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/* change the color of the li element when the mouse is over it */
+#work-experience article ul :hover{
+    font-size: 1.4rem;
+    line-height: 150%;
+    content: "\2022";
+    color:#F77979; /* Change the color */
+}
+
+
+#work-experience article ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-left: 60px;
+}
+
+.block-experience h3, h5{
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+.block-experience h6{
+    font-size: 1.4rem;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.block-experience span{
+    font-size: 1.4rem;
+}
+
+.block-experience h4{
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.block-experience{
+    margin: 30px 0;
+}
+
+/* Calendar flex */
+
+.calendar-container{
+    display: flex;
+    margin-left:50px;
+}
+
+.calendar-container{
+    display: inline-block;
+}
+
+/* Make the circle for professional experionces */
+.big-circle{
+    background-color:#F77979;
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.big-circle:hover{
+    background-color:#4B86AB;
+}
+
+.small-circle{
+    background-color: white;    
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+
+    /* adjust the left and the top if the height and width are amended */
+    left: 27%;
+    top: 26%;
+    position: absolute;
+}
+
+.appear2 {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  
+
+/* vertical lign */
+
+.vl-1{
+    border-left: 2px solid #ccc;
+    height: 180px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-2{
+    border-left: 2px solid #ccc;
+    height: 500px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-3{
+    border-left: 2px solid #ccc;
+    height: 300px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-4{
+    border-left: 2px solid #ccc;
+    height: 100px;
+    float: left;
+    margin-left: 14px;
+}
+
+.vl-5{
+    border-left: 2px solid #ccc;
+    height: 40px;
+    float: left;
+    margin-left: 11px;
+}
+
+
+
+
+/* Flex to adjust the title and the cercle together */
+
+.top-block-experience-container{
+    display: flex;
+    align-items: center;
+}
+
+/* hidden section using Javascipt function  and skills button*/
+
+#hidden li a {
+   text-decoration: none;
+}
+
+#hidden li a {
+    text-decoration: none;
+    color:#16191B;
+    font-size: 1.3rem;
+ }
+
+
+#hidden li a:visited {
+    color:#16191B;
+    font-size: 1.5rem;
+}
+
+#hidden li a:hover{
+    color: #4B86AB;
+}
+
+#hidden, #hidden-button {
+    display: none;
+}
+
+#hidden span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+.skills-button{
+    background-color: #60BDF7;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #16191B;
+    font-size: 1.1rem;
+    margin-left: 40px;
+}
+
+.skills-button:active{
+    background-color: #F77979;
+}
+
+/* Education session */
+
+#education{
+    padding-left: 2%;
+}
+
+#education h2{
+    font-size: 2rem;
+    color:#16191B
+}
+
+#education h3{
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+#education article ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-left: 60px;
+}
+
+#education p{
+    font-size: 1.3rem;
+    margin-left: 50px;
+
+}
+
+#education article ul {
+    list-style: none
+}
+
+#education span {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.block-school ul:first-child {
+font-size: 1.4rem;
+line-height: 150%;
+list-style-type: ' 🚀'
+
+}
+
+.block-school{
+    margin-top: 30px;
+}
+
+/* Make the seconde circle for the education */
+.big-circle2{
+    background-color:#60BDF7;
+    border-radius:50%;
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.big-circle2:hover{
+    background-color:#4B86AB
+}
+
+.small-circle2{
+    background-color: white;    
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+
+    /* adjust the left and the top if the height and width are amended */
+    left: 24%;
+    top: 23%;
+    position: absolute;
+}
+
+
+
+
+/* Reference section */
+
+#references {
+    display: flex;
+    flex-direction: column;
+}
+
+#reference-container{
+    display: flex;
+}
+
+.reference-small-container{
+    display: flex;
+}
+
+.reference-small-container-title{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+#reference-container-left img, #reference-container-right img{
+    width: 70px;
+    height: 70px;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 10px;
+    filter: sepia(30%);
+}
+
+#reference-container-left, #reference-container-right{
+    width: 50%;
+    margin: 20px;
+}
+
+#references h2{
+    font-size: 2rem;
+    color: #16191B;
+    display: inline-block;
+    padding-left: 2%;
+
+}
+
+#references h5{
+    font-size: 1.4rem;
+}
+
+#references h6{
+    font-size: 1.3rem;
+}
+
+#references p , q{
+    font-size: 1.5rem;
+    line-height: 130%;
+    word-spacing: 0.2rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+q::before{
+    font-size: 2rem;
+    color: #4B86AB
+}
+
+q::after{
+    display: none;
+}
+
+
+/* Form CSS */
+#contact-form-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#contact h2{
+    font-size: 2rem;
+    color:#16191B;
+    padding-left: 2%;
+}
+
+
+
+form{
+    width: 50%;
+    padding-left: 2%;
+}
+
+label{
+    font-size:1.4rem;
+    margin-top: 5px;
+}
+
+label:first-child{
+    margin-top:10px;
+}
+
+input, select, textarea, button , option{
+    max-width: 90%;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+input[type=text], input[type=email], textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1.5rem
+}
+
+input:hover{
+    border: #F77979 1px solid;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form .submit-button {
+    background-color: #60BDF7;
+    padding: 10px 30px;
+    width:auto;
+    margin-top:20px;
+    font-size: 1.4rem;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+form  .submit-button:active{
+    background-color: #F77979;
+    color: yellow
+}
+
+
+/* footer part */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+footer .footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-credit-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+/* heart logo */
+
+.black-heart{
+    width: 30px;
+    min-width: none;
+    height: 30px;
+    position: absolute;
+    top: -6px;
+    right: -35px;
+}
+
+ footer h3{
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+}
+
+footer p{
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+}
+
+
+
+
+
+
+
