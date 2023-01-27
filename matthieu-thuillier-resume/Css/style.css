@@ -289,9 +289,6 @@ h2 {
     color: #F77979;
 }
 
-
-
-
 /* about me left section */
 
 #bio ul {
@@ -317,6 +314,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     padding-left: 2%;
+    position: relative;
 
 }
 
@@ -375,6 +373,19 @@ h2 {
     height: 14px;
     margin: auto 0;
     border-radius: 10px;
+}
+
+/* Randowm Button */
+
+#changeBackground{
+    display: inline;
+    background-color: #60BDF7;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 30px;
+    left: 200px;
 }
 
 /* professionnal experiences */

@@ -7,6 +7,44 @@ const alertDownload = () => {
     console.log('The button is clicked')
 }
 
+
+// function to generate randowm color for the skills bars //
+
+// USe the button ti change the color of the whole classes of skills progress advancesd 
+const setBg = () => {
+    let changeColor = document.querySelectorAll('.skills-progress-advanced')
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+    for (let i = 0; i < changeColor.length; i++) {
+        changeColor[i].style.backgroundColor = "#" + randomColor;
+    }
+}
+
+
+// use the logic to change the background color of the intermeddiate skills
+
+
+let eventTrigger = document.getElementById('changeBackground')
+
+const setBgTwo = () => {
+    let changeColorTwo = document.querySelectorAll('.skills-progress-intermediate')
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+    // Use a loop to pick the right element position
+
+    for (let i = 0; i < changeColorTwo.length; i++) {
+        changeColorTwo[i].style.backgroundColor = "#" + randomColor;
+    }
+}
+
+
+eventTrigger.addEventListener('click', setBgTwo)
+
+
+  
+
+
+
 // click two buttons to reverse the logic ==> one button is create when the first function is passed //
 
 let moreSkills = document.getElementById('hidden')
