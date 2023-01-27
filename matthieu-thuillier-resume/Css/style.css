@@ -270,7 +270,7 @@ h2 {
 #about-me p {
     font-size: 1.4rem;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 34px;
     text-align: justify;
     padding-right: 10%;
 }
@@ -583,16 +583,183 @@ h2 {
     color: #4B86AB;
 }
 
-#hidden, #hidden-button {
-    display: none;
-}
-
 #hidden span{
     font-size: 1.5rem;
     font-weight: 700;
     margin: 20px 50px;
     display: inline-block
 }
+
+#hidden, #hidden-button{
+    display: none;
+}
+
+#hidden1{ 
+    display: none;
+}
+
+#hidden1-button{
+    display: none;
+}
+
+
+#hidden1 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden1 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ 
+ #hidden1 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden1 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden1 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+
+
+
+
+#hidden2 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden2 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden2 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden2 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden2 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+#hidden2, #hidden2-button{
+    display: none;
+}
+
+
+
+#hidden3 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden3 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden3 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden3 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden3 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+#hidden3, #hidden3-button{
+    display: none;
+}
+
+
+
+#hidden4 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden4 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden4 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden4 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden4 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+#hidden4, #hidden4-button{
+    display: none;
+}
+
+
+#hidden5 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden5 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden5 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden5 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden5 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 50px;
+    display: inline-block
+}
+
+#hidden5, #hidden5-button{
+    display: none;
+}
+
+
 
 .skills-button{
     background-color: #60BDF7;

@@ -22,7 +22,6 @@ const setBg = () => {
     console.log('this button is clicked')
 }
 
-
 //use the logic to change the background color of the intermeddiate skills
 
 
@@ -53,14 +52,11 @@ const showMore = () =>{
     moreButton.style.display = 'block';
     console.log('this open  button is clicked true')
     overWritting.style.display='none'
-
 }
 
 moreSkills.addEventListener('click', showMore)
 moreButton.addEventListener('click', showMore)
 overWritting.addEventListener('click',showMore)
-
-
 
 const closeMore = () => {
     moreSkills.style.display = 'none';
@@ -70,9 +66,132 @@ const closeMore = () => {
     overWritting.style.display='block'
 }
 
+moreSkills.addEventListener('click', closeMore);
+moreButton.addEventListener('click', closeMore);
 
-moreSkills.addEventListener('click', closeMore)
-moreButton.addEventListener('click', closeMore)
+
+// Method to close the click more button for the section of Country manager position //
+
+let moreSkills1 = document.getElementById('hidden1');
+let moreButton1 = document.getElementById('hidden-button1');
+let overWritting1 = document.getElementById('showmore-button1');
+
+const showMore1 = () =>{
+    moreSkills1.style.display = 'block';
+    moreButton1.style.display = 'block';
+    overWritting1.innerHTML = 'Learn more'; // back to the original version //
+    console.log('this open  button is clicked true')
+    overWritting1.style.display='none'
+}
+
+moreSkills1.addEventListener('click', showMore1)
+moreButton1.addEventListener('click', showMore1)
+overWritting1.addEventListener('click',showMore1)
+
+const closeMore1 = () => {
+    moreSkills1.style.display = 'none';
+    moreButton1.style.display = 'none';
+    overWritting1.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting1.style.display='block'
+}
+
+moreSkills1.addEventListener('click', closeMore1);
+moreButton1.addEventListener('click', closeMore1);
+
+
+// function for the team leader position
+
+
+let moreSkills2 = document.getElementById('hidden2');
+let moreButton2 = document.getElementById('hidden-button2');
+let overWritting2 = document.getElementById('showmore-button2');
+
+const showMore2 = () =>{
+    moreSkills2.style.display = 'block';
+    moreButton2.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting2.style.display='none'
+}
+
+
+const closeMore2 = () => {
+    moreSkills2.style.display = 'none';
+    moreButton2.style.display = 'none';
+    overWritting2.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting2.style.display='block'
+}
+
+
+// Function for the inside sales position
+
+let moreSkills3 = document.getElementById('hidden3');
+let moreButton3 = document.getElementById('hidden-button3');
+let overWritting3 = document.getElementById('showmore-button3');
+
+const showMore3 = () =>{
+    moreSkills3.style.display = 'block';
+    moreButton3.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting3.style.display='none'
+}
+
+
+const closeMore3 = () => {
+    moreSkills3.style.display = 'none';
+    moreButton3.style.display = 'none';
+    overWritting3.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting3.style.display='block'
+}
+
+// function for inside nord net position\
+
+
+let moreSkills4 = document.getElementById('hidden4');
+let moreButton4 = document.getElementById('hidden-button4');
+let overWritting4 = document.getElementById('showmore-button4');
+
+const showMore4 = () =>{
+    moreSkills4.style.display = 'block';
+    moreButton4.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting4.style.display = 'none';
+}
+
+
+const closeMore4 = () => {
+    moreSkills4.style.display = 'none';
+    moreButton4.style.display = 'none';
+    overWritting4.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting4.style.display='block'
+}
+
+//Function retail position 
+
+let moreSkills5 = document.getElementById('hidden5');
+let moreButton5 = document.getElementById('hidden-button5');
+let overWritting5 = document.getElementById('showmore-button5');
+
+const showMore5 = () =>{
+    moreSkills5.style.display = 'block';
+    moreButton5.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting5.style.display = 'none';
+}
+
+
+const closeMore5 = () => {
+    moreSkills5.style.display = 'none';
+    moreButton5.style.display = 'none';
+    overWritting5.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting5.style.display='block'
+}
+
+
 
 
 
@@ -97,25 +216,4 @@ const alertForm = () => {
     alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
     console.log('The button has been clicked and the form is pushed')
 }
-
-
-//exemple //
-
-
-
-const items = document.querySelectorAll('.appear2');
-
-const active = function(entries){
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-        entry.target.classList.add('inview2'); 
-        }else{
-            entry.target.classList.remove('inview2'); 
-        }
-    });
-}
-const io2 = new IntersectionObserver(active);
- for(let i=0; i < items.length; i++){
-    io2.observe(items[i]);
- }
 
