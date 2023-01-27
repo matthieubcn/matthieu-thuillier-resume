@@ -18,17 +18,19 @@ const setBg = () => {
     for (let i = 0; i < changeColor.length; i++) {
         changeColor[i].style.backgroundColor = "#" + randomColor;
     }
+
+    console.log('this button is clicked')
 }
 
 
-// use the logic to change the background color of the intermeddiate skills
+//use the logic to change the background color of the intermeddiate skills
 
 
 let eventTrigger = document.getElementById('changeBackground')
 
 const setBgTwo = () => {
-    let changeColorTwo = document.querySelectorAll('.skills-progress-intermediate')
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+let changeColorTwo = document.querySelectorAll('.skills-progress-intermediate')
+const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
     // Use a loop to pick the right element position
 
@@ -37,12 +39,7 @@ const setBgTwo = () => {
     }
 }
 
-
-eventTrigger.addEventListener('click', setBgTwo)
-
-
-  
-
+eventTrigger.addEventListener('click', setBgTwo);
 
 
 // click two buttons to reverse the logic ==> one button is create when the first function is passed //

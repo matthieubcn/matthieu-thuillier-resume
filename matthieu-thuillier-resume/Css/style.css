@@ -377,16 +377,22 @@ h2 {
 
 /* Randowm Button */
 
-#changeBackground{
-    display: inline;
+.professional-button{
     background-color: #60BDF7;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px 30px;
-    position: absolute;
-    top: 30px;
-    left: 200px;
+    font-size:1.4rem;
 }
+
+.professional-button:active{
+    background-color:#F77979;
+    color:white;
+    font-size:1.4rem
+}
+
+
+
 
 /* professionnal experiences */
 
