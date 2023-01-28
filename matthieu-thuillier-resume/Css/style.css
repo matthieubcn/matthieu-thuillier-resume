@@ -548,6 +548,8 @@ h2 {
 }
 
 
+
+
 .vl-6{
     border-left: 2px solid #60BDF7;
     height: 80px;
@@ -817,14 +819,15 @@ font-size: 3em;
 
 #education h4{
     font-size: 1.3rem;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
 
 }
 
 #education article ul li{
     font-size: 1.4rem;
     line-height: 150%;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 #education p{
@@ -855,6 +858,13 @@ list-style-type: ' 🚀'
     margin-top: 30px;
 }
 
+/* Create this fake container to adjust it */
+.flex-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
 /* Make the seconde circle for the education */
 .big-circle2{
     background-color:#60BDF7;
@@ -879,8 +889,6 @@ list-style-type: ' 🚀'
     top: 23%;
     position: absolute;
 }
-
-
 
 
 /* Reference section */
@@ -915,7 +923,7 @@ list-style-type: ' 🚀'
 }
 
 #reference-container-left, #reference-container-right{
-    width: 50%;
+    width: 450%;
     margin: 20px;
 }
 
@@ -944,8 +952,13 @@ list-style-type: ' 🚀'
 }
 
 q::before{
-    font-size: 2rem;
-    color: #4B86AB
+    font-size: 10rem;
+    color: #4B86AB;
+    position: relative;
+    top: 40px;
+    quotes: """ """;
+
+
 }
 
 q::after{
@@ -1000,7 +1013,7 @@ input[type=text], input[type=email], textarea, select{
 }
 
 input:hover{
-    border: #F77979 1px solid;
+    border: #60BDF7 1px solid;
 }
 
 

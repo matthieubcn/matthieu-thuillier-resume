@@ -40,13 +40,19 @@
 
     #about-me h2 {
         margin-top: 20px;
+        margin-left: 10px;
     }
      #about-me p {
         margin-top: 20px;
+        margin-left: 10px;
      }
 
      .adress{
         margin-left: 30px;
+     }
+
+     #bio ul li{
+        margin-left: 10px;
      }
 }
 
@@ -65,6 +71,11 @@
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    #professional-skills h2{
+        margin-left: 10px;
     }
 
 }
@@ -76,7 +87,17 @@
 
     #work-experience h3{
         font-size: 1.4rem;
+        margin-left: 15px;
     }
+
+    #work-experience h2{
+        margin-left: 10px;
+    }
+
+    #auchan-hidden, #nestle-hidden{
+        display: none;
+    }
+
 
 .vl-1{
     border-left: 2px solid #ccc;
@@ -106,6 +127,7 @@
     margin-left: 14px;
 }
 
+
 }
 
 
@@ -128,7 +150,7 @@
 
 @media only screen and (max-width: 430px){
 
-    .footer-logo{
+    footer .footer-logo{
         display: flex;
         justify-content: center;
     }

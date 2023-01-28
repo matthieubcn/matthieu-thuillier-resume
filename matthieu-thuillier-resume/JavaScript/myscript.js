@@ -192,22 +192,48 @@ const closeMore5 = () => {
 }
 
 
-
-
-
 // Form section //
 
 // Change the color of the field background when the field is active
 
-let inputFormName = document.getElementsByClassName('input-color');
+let inputFormName = document.getElementById('name');
 
 const changeInputBackground = () => {
-    inputFormName.style.backgroundColor= 'red';
+    inputFormName.style.backgroundColor= 'whitesmoke';
     console.log('this input is clicked')
 }
+inputFormName.addEventListener('mouseover', changeInputBackground);
 
-inputFormName.addEventListener('click',changeInputBackground);
+
+
  
+let email= document.getElementById('email')
+
+const changeEmailBackground = () => {
+    email.style.backgroundColor = 'whitesmoke'
+    
+}
+email.addEventListener('click', changeEmailBackground)
+
+// Change the color of the company field
+
+let company = document.getElementById('company')
+
+const changeCompanyBackground = () => {
+    company.style.backgroundColor = 'whitesmoke'
+}
+
+company.addEventListener('click', changeCompanyBackground)
+
+// Change the text color for the textarea field
+
+let message = document.getElementById('message')
+
+const changeTextArea = () => {
+    message.style.backgroundColor = 'whitesmoke'
+}
+
+message.addEventListener('click', changeTextArea)
 
 // Create a basic alert when the form is submitted //
 
