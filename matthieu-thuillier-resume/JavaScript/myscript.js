@@ -238,8 +238,48 @@ message.addEventListener('click', changeTextArea)
 // Create a basic alert when the form is submitted //
 
 
-const alertForm = () => {
-    alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
-    console.log('The button has been clicked and the form is pushed')
+// const alertForm = () => {
+//     alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
+//     console.log('The button has been clicked and the form is pushed')
+// }
+
+//Crete a fucntion to trigger a valide fomr
+
+let fieldRequiredHidden = document.getElementById('form-hidden')
+
+const validateForm = () => {
+
+let nameValue=document.myform.name.value;  
+let emailValue = document.myform.email.value;
+let companyValue = document.myform.company.value;
+let messageValue = document.myform.message.value;
+
+    
+    if (nameValue == '' || emailValue == '' || companyValue == '' || messageValue === '') {
+        fieldRequiredHidden.style.display = 'block';
+    } else {
+        alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
+    }
+ }
+
+
+
+
+// Create a function for the hamburger menu
+
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
 }
 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}

@@ -167,7 +167,7 @@ h2 {
     color: white;
     font-size: 2rem;
     font-weight: 600;
-    z-index: 9999;
+    z-index: 1;
     margin-top: 10px;
     margin-bottom:20px
     
@@ -508,7 +508,7 @@ h2 {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
-  
+
 
 /* vertical lign */
 
@@ -542,12 +542,10 @@ h2 {
 
 .vl-5{
     border-left: 2px solid #ccc;
-    height: 40px;
+    height: 60px;
     float: left;
     margin-left: 11px;
 }
-
-
 
 
 .vl-6{
@@ -558,8 +556,13 @@ h2 {
     margin-top: 60px;
 }
 
+.vl-7{
+    border-left: 2px solid #ccc;;
+    height: 100px;
+    float: left;
+    margin-left: 11px;
 
-
+}
 
 /* Flex to adjust the title and the cercle together */
 
@@ -758,34 +761,6 @@ h2 {
     display: none;
 }
 
-/* stars section */
-
-
-.fa-star {
-	color:black;
-	cursor: pointer;
-	padding: 0.0625rem;
-    background-color: red;
-}
-.fa-star.gold {
-	color: #ffdc0f;
-    background-color: red;
-}
-
-.rating {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    background-color: red;
-}
-
-.stars {
-display: inline-flex;
-justify-content: center;
-font-size: 3em;
-}
-
-
 
 .skills-button{
     background-color: #60BDF7;
@@ -799,6 +774,13 @@ font-size: 3em;
 
 .skills-button:active{
     background-color: #F77979;
+}
+
+
+#smiley:first-child{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
 }
 
 /* Education session */
@@ -832,7 +814,8 @@ font-size: 3em;
 
 #education p{
     font-size: 1.3rem;
-    margin-left: 50px;
+    margin-left: 59px;
+    margin-top: 20px;
 
 }
 
@@ -850,7 +833,7 @@ font-size: 3em;
 .block-school ul:first-child {
 font-size: 1.4rem;
 line-height: 150%;
-list-style-type: ' 🚀'
+list-style-type: '🚀'
 
 }
 
@@ -889,6 +872,8 @@ list-style-type: ' 🚀'
     top: 23%;
     position: absolute;
 }
+
+
 
 
 /* Reference section */
@@ -1044,6 +1029,19 @@ iframe{
     height:500px;
 
 }
+
+
+/* Form hidden fields required */
+
+#form-hidden{
+    display: none;
+    color: #F77979;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+
 /* footer part */
 
 footer{

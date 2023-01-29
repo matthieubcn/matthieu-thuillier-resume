@@ -38,6 +38,29 @@
         </nav>
       </div>
 
+      <!-- Hamburger menu -->
+
+      <div id="mySidenav" class="sidenav hamburger-hidden">
+        <a id="closeBtn" href="#" class="close">×</a>
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#professional-skills">Skills</a></li>
+        <li><a href="#work-experience">Experiences</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#reference">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+
       <div id="hero" class="background-picture shadow-box">
         <img
           class="avatar filter"
@@ -55,11 +78,11 @@
             />
           </li>
           <li>
-            <img
+            <a href='https://www.linkedin.com/in/matthieu-thuillier-aa692429' target="_blank"><img
               class="hero-logo"
               src="./images/new-linkedin-logo-white-black-png.png"
               alt="This is a logo"
-            />
+            /></a>
           </li>
           <li>
             <img
@@ -218,9 +241,6 @@
           </ul>
           
 
-
-          
-
           <button
             id="showmore-button"
             class="skills-button"
@@ -236,16 +256,12 @@
 
 
             <ul>
-              <li><a href="">Team Management</a></li>
+              <li id="smiley" ><a href="">Team Management</a></li>
               <li><a href="">Monitoring KPIS</a></li>
               <li><a href="">Team Management</a></li>
               <li><a href="">Reportings KPIS</a></li>
             </ul>`
-          
-
-           
-          
-
+        
           <button
             onclick="closeMore()"
             id="hidden-button"
@@ -555,9 +571,6 @@
 
           </div>
 
-
-
-
         </article>
 
         <article class="block-experience">
@@ -732,9 +745,7 @@
           </h3>
             </div>
 
-            <div class="vl-5"></div>
-
-
+            <div class="vl-7"></div>
           <div class="calendar-container flex-container">
             <span class="ec ec-calendar calendar-smilley"></span>
             <h4>January09- December09</h4>
@@ -828,7 +839,9 @@
         <h2>Contact</h2>
 
         <div id="contact-form-container">
-        <form id="'contact-form">
+        <form name="myform" id="'contact-form" onsubmit="return validateForm()">
+
+
           <label for="name">Name</label>
           <input @onclick="changeInputBackground()" type="text" name="name" id="name" maxlength="300" required placeholder="Steve Wozniak" id='inputFormName'/>
 
@@ -851,10 +864,11 @@
 
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="4" colums="3" placeholder="Your message here..."></textarea>
+          <span id="form-hidden">All the fields are required</span>
+    
 
           <button
-            class="submit-button"
-            onclick="alertForm()"
+            class="submit-button"`
             type="submit"
             value="submit">Submit</button>
           </button>
