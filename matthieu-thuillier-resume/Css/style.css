@@ -42,7 +42,7 @@ header #top-menu {
     justify-content: space-between;
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-right: 10%;
+    margin-right: 14%;
 }
 
 #top-menu span {
@@ -579,7 +579,7 @@ h2 {
     height: 80px;
     float: left;
     margin-left: 14px;
-    top: -20%;
+    margin-bottom: -10px;
 }
 
 .vl-7{
@@ -895,7 +895,7 @@ list-style-type: '🚀'
 
     /* adjust the left and the top if the height and width are amended */
     left: 24%;
-    top: 23%;
+    top: 25%;
     position: absolute;
 }
 

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Universal connector */
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* reset the font size */
+    font-size: 10px;
+    /* reset the margin */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #16191B;
+    margin: 0 auto;
+    max-width: 1100px;
+    background-color: #F2F2F2
+}
+
+/* This boxes is reused for all the sections */
+
+.shadow-box {
+    box-shadow: 2px 2px 2px #808080;
+    border-radius: 10px;
+    margin: 30px 0;
+    background-color: white;
+    padding:30px 0;
+}
+
+
+/* Top menu CSS */
+
+header #top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 14%;
+}
+
+#top-menu span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#top-menu nav ul {
+    display: flex;
+}
+
+#top-menu nav li {
+    list-style: none;
+    padding: 3%
+}
+
+#top-menu nav li a {
+    font-size: 1.5rem;
+    text-decoration: none
+}
+
+#top-menu nav li a:visited {
+    color: #808080
+}
+
+#top-menu nav li:nth-child(1) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(2) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F77979;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(3) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(4) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F77979;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(5) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+
+#top-menu nav li:nth-child(6) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #F7F692;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
+

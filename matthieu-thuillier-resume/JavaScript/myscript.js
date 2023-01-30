@@ -1,5 +1,25 @@
 console.log('Hello World')
 
+// Create a function for the hamburger menu
+
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}
+
+
 // Function alert to thanks for downloading the CV//
 
 const alertDownload = () => {
@@ -262,25 +282,3 @@ let messageValue = document.myform.message.value;
         alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
     }
  }
-
-
-
-
-// Create a function for the hamburger menu
-
-let sidenav = document.getElementById("mySidenav");
-let openBtn = document.getElementById("openBtn");
-let closeBtn = document.getElementById("closeBtn");
-
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  sidenav.classList.add("active");
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  sidenav.classList.remove("active");
-}
