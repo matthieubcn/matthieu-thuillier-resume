@@ -137,10 +137,12 @@ header #top-menu {
 
 .background-picture {
     /* background-image: url('https://demo.templateflip.com/material-resume/images/header-background.jpg'); */
-    background-repeat: no-repeat;
-    background-image: url('../images/background-g91c763fe1_1280.jpg');
-    
+  
+    /* background-image: url('../images/background-g91c763fe1_1280.jpg'); */
 
+    background-image: url(../images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     /* -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -486,9 +488,8 @@ h2 {
 }
 
 .big-circle:hover{
-    background-color:#4B86AB;
+    background-color:#808080;
 }
-
 .small-circle{
     background-color: white;    
     border-radius: 50%;
@@ -508,6 +509,31 @@ h2 {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
+
+
+  .big-circle-skills{
+    background-color:#4B86AB;
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.big-circle-skills:hover{
+    background-color:#60BDF7
+}
+
+.small-circle-skills{
+    background-color: white;    
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+
+    /* adjust the left and the top if the height and width are amended */
+    left: 27%;
+    top: 26%;
+    position: absolute;
+}
 
 
 /* vertical lign */
@@ -552,8 +578,8 @@ h2 {
     border-left: 2px solid #60BDF7;
     height: 80px;
     float: left;
-    margin-left: 11px;
-    margin-top: 60px;
+    margin-left: 14px;
+    top: -20%;
 }
 
 .vl-7{
@@ -596,7 +622,7 @@ h2 {
 #hidden span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 
@@ -636,7 +662,7 @@ h2 {
  #hidden1 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 
@@ -663,7 +689,7 @@ h2 {
  #hidden2 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 
@@ -693,7 +719,7 @@ h2 {
  #hidden3 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 
@@ -723,7 +749,7 @@ h2 {
  #hidden4 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 
@@ -753,7 +779,7 @@ h2 {
  #hidden5 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 20px 20px;
     display: inline-block
 }
 

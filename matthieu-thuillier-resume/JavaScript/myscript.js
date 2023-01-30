@@ -256,6 +256,7 @@ let messageValue = document.myform.message.value;
 
     
     if (nameValue == '' || emailValue == '' || companyValue == '' || messageValue === '') {
+        alert('All the fields are required')
         fieldRequiredHidden.style.display = 'block';
     } else {
         alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)

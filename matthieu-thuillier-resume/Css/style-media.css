@@ -61,7 +61,7 @@
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 6px 3px;
   }
 }
 
@@ -87,7 +87,7 @@
 @media only screen and (min-width: 430px){
     .hamburger-hidden {
         display: none;
-    }
+    } 
 }
 
 /* Adjust the top menu */
@@ -96,7 +96,13 @@
 
 header #top-menu{
     float: right;
-    margin-right: 30px;
+    margin-right: 10px;
+    }
+   header #top-bar-mobile{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 10px;
     }
 
 }
