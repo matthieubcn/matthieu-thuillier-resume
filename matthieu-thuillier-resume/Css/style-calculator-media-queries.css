@@ -75,14 +75,14 @@
     }
 }
 
-/* To be removed */
+/* TO be removed */
 @media only screen and (max-width: 430px){
     nav {
         display: none;
     }
 }
 
-/* To be removed for desktop session */
+/* TO to be removed foor desktop session */
 @media only screen and (min-width: 430px){
     .hamburger-hidden {
         display: none;
@@ -104,3 +104,10 @@ header #top-menu{
         margin-top: 10px;
     }
 }
+
+@media only screen and (max-width: 430px){
+    .container{
+        max-width: 90%;
+    }
+}
+

@@ -116,37 +116,64 @@ header #top-menu {
     transition-delay: 200ms;
 }
 
-/* main content */
 
-#main-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+/* calculator */
+
+.container{
+    max-width: 40%;
+    margin: 10% auto 0 auto;
+    box-shadow: 0px 0px 43px 7px rgba(153, 153, 153, 1);
+    min-width: 35%;
+
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 30px;
+    border-left:  1px solid #999;
+    border-top:  1px solid #999;
+    background-color: lightgray ;
+    color: black;
+
 }
 
-.small-color-container h2{
-    font-size: 2rem;
-    color: #808080;
+.buttons{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.small-color-container{
-    width: 25%;
-    height: 200px;
-    padding: 20px;
-    margin: 10px;
+.buttons > div{
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
 }
 
-/* Button */
+.button{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
 
-.learn-button {
+#equal{
     background-color: #60BDF7;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px 30px
 }
 
-
-.learn-button:active {
-    background-color: #F77979;
-    color: white;
+.button:hover{
+    background-color: lightgray;
+    transition: 400ms ease-in-out;
 }
+
+#equal:active{
+    background-color: red;
+    color:#F2F2F2;
+    transition: 300ms all;
+}
+
+/* ่้Medi */
+
