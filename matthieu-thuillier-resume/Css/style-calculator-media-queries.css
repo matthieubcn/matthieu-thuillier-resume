@@ -108,6 +108,47 @@ header #top-menu{
 @media only screen and (max-width: 430px){
     .container{
         max-width: 90%;
+        margin-top: 10vh;
     }
 }
 
+@media only screen and (max-width: 430px){
+  
+  }
+  #top-black-banner h2{
+    font-size: 3em;
+    color: white;
+}
+
+#top-black-banner{
+  margin: 10% auto 0 auto;
+  width: 90%;
+}
+
+
+/* footer */
+
+
+@media only screen and (max-width: 430px){
+
+  footer{
+    margin-top: 5vh;
+  }
+
+  footer .footer-logo{
+      display: flex;
+      justify-content: center;
+  }
+
+  .footer-credit-container{
+      display: flex;
+      flex-direction: column;
+  }
+  footer p{
+      margin: 0;
+  }
+  .footer-logo img {
+      margin: 20px;
+  }
+
+}

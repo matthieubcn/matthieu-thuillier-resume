@@ -116,7 +116,7 @@ header #top-menu {
     transition-delay: 200ms;
 }
 
-/* main content */
+/* main content section */
 
 #main-container{
     display: flex;
@@ -136,6 +136,33 @@ header #top-menu {
     margin: 10px;
 }
 
+#main-container img{
+    width: 30%;
+}
+
+#main-container img:hover{
+    width: 32%;
+    transition: width 300ms ease-in;
+}
+
+#main-container a, #main-container p{
+    display: inline-block;
+}
+
+#main-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+
+/* Align the title and the image */
+.sub-small-color-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Button */
 
 .learn-button {
@@ -145,8 +172,68 @@ header #top-menu {
     padding: 10px 30px
 }
 
+.learn-button{
+    margin-top: 20px;
+}
+
 
 .learn-button:active {
     background-color: #F77979;
     color: white;
+}
+
+
+
+
+/* footer part */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+footer .footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-credit-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+/* heart logo */
+
+.black-heart{
+    width: 30px;
+    min-width: none;
+    height: 30px;
+    position: absolute;
+    top: -6px;
+    right: -35px;
+}
+
+ footer h3{
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+}
+
+footer p{
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
 }
