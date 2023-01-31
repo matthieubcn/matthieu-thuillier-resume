@@ -113,18 +113,52 @@ header #top-menu{
 }
 
 @media only screen and (max-width: 430px){
-  
-  #top-black-banner h2{
-    font-size: 3em;
-    color: white;
+
+#top-black-banner h2{
+  font-size: 3rem;
+  color: white;
+}
+}
+/* section cookies  */
+
+@media only screen and (max-width: 430px){
+
+#cookies-container{
+  max-width: 600px;
+  height: 450px;
+
 }
 
-#top-black-banner{
-  margin: 10% auto 0 auto;
-  width: 90%;
+
+
+.sub-cookies-container2{
+  display: flex;
+}
+
+#cookies-container h3{
+  font-size: 3rem;
+  text-align: center;
+ 
+}
+
+#cookies-container p{
+  font-size: 3em;
+}
+.cookies-button{
+  min-width: auto;
+  max-width: auto;
+  text-align: center;
 }
 
 }
+
+
+/* Hidden and the logic is trigger in JS  */
+
+#button-hidden{
+  display: none;
+}
+
 
 
 /* footer */
