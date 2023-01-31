@@ -119,7 +119,7 @@ header #top-menu {
 
 /* Top black banner */
 
-#top-black-banner > h2{
+#top-black-banner{
     height: 200px;
     width: 100%;
     display: flex;
@@ -138,6 +138,10 @@ header #top-menu {
 #top-black-banner h2{
     font-size: 5rem;
     color: white;
+}
+
+#top-black-banner img{
+    width: 15%;
 }
 
 
