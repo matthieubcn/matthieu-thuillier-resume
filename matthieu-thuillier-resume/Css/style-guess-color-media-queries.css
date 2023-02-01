@@ -131,14 +131,19 @@ header #top-menu{
 
 }
 
-
+/* adjust the container */
+@media only screen and (max-width: 430px){
+  h1{
+    font-size: 1.1rem;
+  }
+  span #color-display{
+    font-size: 1.2em;
+  }
+}
 /* footer */
 
-@media only screen and (max-width: 430px){
 
-  footer{
-    margin-top: 5vh;
-  }
+@media only screen and (max-width: 430px){
 
   footer .footer-logo{
       display: flex;
@@ -155,5 +160,4 @@ header #top-menu{
   .footer-logo img {
       margin: 20px;
   }
-
 }

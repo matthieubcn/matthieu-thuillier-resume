@@ -20,9 +20,7 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
-
-
-// Manipulate a dom
+// Manipulate the  dom and JS function for the calculator logic //
 
 let display = document.getElementById('display');
 
