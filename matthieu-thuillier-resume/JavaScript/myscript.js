@@ -23,7 +23,7 @@ function closeNav() {
 // Function alert to thanks for downloading the CV//
 
 const alertDownload = () => {
-    alert('Thanks for downloading my CV')
+    alert(`Thanks for downloading my CV - you'll be redirected to a new tab soon`)
     console.log('The button is clicked')
 }
 
