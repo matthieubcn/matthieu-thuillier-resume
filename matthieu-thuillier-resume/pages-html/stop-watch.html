@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch</title>
+
+    <!-- CSS Links  -->
+    <link rel="stylesheet" href="../Css/stop-watch.css" />
+    <link rel="stylesheet" href="../Css/stop-watch-media-queries.css">
+
+    <!-- External link to insert the smileys -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/emoji.css/dist/emoji.min.css" 
+    />
+
+
+</head>
+<body>
+
+    <header>
+
+        <div id="top-menu">
+          <span>Matthieu Thuillier</span>
+  
+          <nav>
+            <ul>
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../index.html">Skills</a></li>
+              <li><a href="../index.html">Experiences</a></li>
+              <li><a href="../index.html">Education</a></li>
+              <li><a href="../index.html">References</a></li>
+              <li><a href="#main-container">Project</a></li>
+              <li><a href="../index.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <!-- Hamburger menu -->
+  
+        <div id="top-bar-mobile" class="'hamburger-hidden">
+  
+        <div id="mySidenav" class="sidenav hamburger-hidden">
+          <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../index.html">Skills</a></li>
+          <li><a href="../index.html">Experiences</a></li>
+          <li><a href="../index.html">Education</a></li>
+          <li><a href="../index.html">References</a></li>
+          <li><a href="#main-container">Projects</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </div>
+    </header>
+
+<main>
+    <div id="top-black-banner" class="top-background">
+        <h2>Enjoy our Stop-Watch!</h2>
+        <img src="../images/stopwatch.png" alt='This is a stop-watch'>
+    </div>
+
+    <div id="stop-watch-container" class="box-color">
+
+      <div id="'title-container">
+        <h2>Stop-Watch</h2>
+        <h3>Get in time as Usan Bolt </h3>
+        <div class="emoji">👟</div>
+      </div>
+    
+      <div id="result-container">
+
+      <p><span id="seconds">00</span id='middle'>:</span><span id="tens">00</span></p>
+      </div>
+      <div id="button-container">
+        <button id="button-start" class="start-button">Start</button>
+        <button id="button-stop" class="start-button">Stop</button>
+        <button id="button-reset"  class="start-button">Reset</button>
+
+      </div>
+
+
+
+
+    </div>
+
+</main>
+
+
+<script src="../JavaScript/stop-watch-script.js"></script>
+</body>
+</html>
