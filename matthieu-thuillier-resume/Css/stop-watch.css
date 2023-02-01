@@ -199,6 +199,7 @@ p{
     font-size: 2rem;
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #button-container .start-button:hover {
@@ -211,3 +212,59 @@ p{
     display: flex;
     justify-content:space-around;
 }
+
+/* footer  */ 
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 4vh;
+
+}
+
+footer .footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-credit-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+/* heart logo */
+
+.black-heart{
+    width: 30px;
+    min-width: none;
+    height: 30px;
+    position: absolute;
+    top: -6px;
+    right: -35px;
+}
+
+ footer h3{
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+}
+
+footer p{
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+}
+

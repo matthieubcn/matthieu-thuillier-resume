@@ -143,3 +143,29 @@ header #top-menu{
 
 }
 }
+
+/* footer */
+
+@media only screen and (max-width: 430px){
+
+  footer{
+    margin-top: 5vh;
+  }
+
+  footer .footer-logo{
+      display: flex;
+      justify-content: center;
+  }
+
+  .footer-credit-container{
+      display: flex;
+      flex-direction: column;
+  }
+  footer p{
+      margin: 0;
+  }
+  .footer-logo img {
+      margin: 20px;
+  }
+
+}
