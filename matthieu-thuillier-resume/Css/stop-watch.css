@@ -173,6 +173,19 @@ header #top-menu {
     margin-top: 20px;
 }
 
+  #title-container h2:hover{
+    color: white;
+    transition: 300ms ease-in;
+    font-size: 3.2rem;
+  }
+
+  #title-container h3:hover{
+    color: white;
+    transition: 300ms ease-in;
+    font-size: 3.2rem;
+
+  }
+
 #seconds,#tens{
     font-family: 'Orbitron', 'Roboto';
     font-size: 5em;
@@ -187,7 +200,10 @@ p{
 }
 
 #middle{
-    font-size: 29rem;
+    font-size: 7rem;
+}
+.emoji{
+    display: none
 }
 
 /* button sections */
