@@ -271,11 +271,25 @@ header #top-menu{
         height:380px;
         margin: 20px auto;  
     }
-    form{
+    form {
         width: 100%;
+    }
+    input{
+        margin-left: 30px;
+    }
+
+    #contact-form-container{
+        margin-left: 20px;
+        display: flex;
+
+    }
+    
+    #contact h2{
+        margin-left: 20px;
     }
 
 }
+
 
 /* footer */
 

@@ -115,6 +115,13 @@ header #top-menu {
     padding-bottom: 5px;
     transition-delay: 200ms;
 }
+#top-menu nav li:nth-child(7) a:hover {
+    color: #60BDF7;
+    cursor: pointer;
+    border-bottom: 2px solid #4B86AB;
+    padding-bottom: 5px;
+    transition-delay: 200ms;
+}
 
 
 /* Hero Section */
@@ -171,8 +178,14 @@ h2 {
     font-weight: 600;
     z-index: 1;
     margin-top: 10px;
-    margin-bottom:20px
-    
+    margin-bottom:20px;
+}
+
+
+#hero h1:hover,
+h2:hover {
+    color: whitesmoke;
+
 }
 
 .hero-menu {
@@ -191,6 +204,10 @@ h2 {
 
 #hero nav img {
     padding: 0 20px;
+    filter: invert(80%);
+}
+#hero nav img:hover {
+    padding: 0 20px;
     filter: invert(100%);
 }
 
@@ -198,7 +215,6 @@ h2 {
     width: 30px;
     max-width: 40px;
 }
-
 
 /* Button section for the hero using 2d  */
 
@@ -238,7 +254,6 @@ h2 {
     background-color: #F77979;
     transition-duration: 100ms;
 }
-
 
 /* About me section */
 
@@ -329,7 +344,7 @@ h2 {
 /* extand to 100% to push it to the next row */
 #professional-skills h2 {
     font-size: 2rem;
-    color: #16191B;
+    color: #808080;
     display: inline-block;
     width: 100%;
     flex-shrink: 1;
@@ -401,7 +416,7 @@ h2 {
 
 #work-experience h2{
     font-size: 2rem;
-    color: #16191B;
+    color: #808080;
 }
 
 #work-experience article ul{
@@ -488,7 +503,7 @@ h2 {
 }
 
 .big-circle:hover{
-    background-color:#808080;
+    background-color:#4B86AB;
 }
 .small-circle{
     background-color: white;    
@@ -817,7 +832,7 @@ h2 {
 
 #education h2{
     font-size: 2rem;
-    color:#16191B
+    color:#808080
 }
 
 #education h3{
@@ -940,7 +955,7 @@ list-style-type: '🚀'
 
 #references h2{
     font-size: 2rem;
-    color: #16191B;
+    color: #808080;
     display: inline-block;
     padding-left: 2%;
 
@@ -986,10 +1001,9 @@ q::after{
 
 #contact h2{
     font-size: 2rem;
-    color:#16191B;
+    color:#808080;
     padding-left: 2%;
 }
-
 
 
 form{
@@ -1053,6 +1067,7 @@ form  .submit-button:active{
 iframe{
     width:500px;
     height:500px;
+    margin-top: 30px;
 
 }
 
@@ -1082,7 +1097,7 @@ footer{
 footer .footer-logo{
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    width: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
