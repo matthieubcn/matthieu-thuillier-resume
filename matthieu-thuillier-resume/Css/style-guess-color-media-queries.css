@@ -139,6 +139,13 @@ header #top-menu{
   span #color-display{
     font-size: 1.2em;
   }
+  button {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  #stripe{
+    display: flex;
+  }
 }
 /* footer */
 

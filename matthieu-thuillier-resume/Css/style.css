@@ -246,11 +246,11 @@ h2:hover {
     color: whitesmoke;
 }
 
-.hero-button-one:active {
+.hero-button-one:hover, .hero-button-two:hover {
     background-color: #4B86AB;
 }
 
-.hero-button-two:active {
+.hero-button-two:active, .hero-button-one:active{
     background-color: #F77979;
     transition-duration: 100ms;
 }
@@ -949,7 +949,7 @@ list-style-type: '🚀'
 }
 
 #reference-container-left, #reference-container-right{
-    width: 450%;
+    width: 50%;
     margin: 20px;
 }
 
@@ -977,14 +977,17 @@ list-style-type: '🚀'
     margin-top: 20px;
 }
 
+q {
+    quotes: "“" "”" "“" "“";
+  }
+
 q::before{
     font-size: 10rem;
     color: #4B86AB;
     position: relative;
-    top: 40px;
-    quotes: """ """;
-
-
+    top: 50px;
+    content: open-quote;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 q::after{

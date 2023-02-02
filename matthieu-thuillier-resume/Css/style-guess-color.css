@@ -167,7 +167,7 @@ header #top-menu {
 
 h1 {
 	color: white;
-	background-color: #2C8E99;
+	background-color: #F77979;
 	font-size: 2em;
 	text-align: center;
 	text-transform: uppercase;
@@ -208,6 +208,8 @@ button {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	o-transition: all 0.3s;
+    padding: 20px;
+    margin-left: 10px;
 }
 
 button:hover {
@@ -228,8 +230,10 @@ button:hover {
 	border: 0px solid red;
 }
 
+#container{
 
-
+    margin-top: 10px;
+}
 
 /* ่้footer  */
 

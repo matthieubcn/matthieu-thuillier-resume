@@ -17,6 +17,12 @@
       href="https://unpkg.com/emoji.css/dist/emoji.min.css" 
     />
 
+
+        <!-- External link to fade in -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
 <body>
 
@@ -27,13 +33,13 @@
   
           <nav>
             <ul>
-              <li><a href="../index.html">About</a></li>
-              <li><a href="../index.html">Skills</a></li>
-              <li><a href="../index.html">Experiences</a></li>
-              <li><a href="../index.html">Education</a></li>
-              <li><a href="../index.html">References</a></li>
-              <li><a href="#main-container">Project</a></li>
-              <li><a href="../index.html">Contact</a></li>
+              <li><a href="../index.html#about-me">About</a></li>
+              <li><a href="../index.html#professional-skills">Skills</a></li>
+              <li><a href="../index.html#work-experience">Experiences</a></li>
+              <li><a href="../index.html#education">Education</a></li>
+              <li><a href="../index.html#reference">References</a></li>
+              <li><a href="../pages-html/index-project.html">Project</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -69,7 +75,10 @@
 
   <div id="main-container">
 
-        <section id ='calculator' class="small-color-container shadow-box">
+        <section id ='calculator' class="small-color-container shadow-box"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
 
           <div class="sub-small-color-container">
 
@@ -85,7 +94,11 @@
         </section>
 
 
-        <section id ='fortune-cookies' class="small-color-container shadow-box">
+        <section id ='fortune-cookies' class="small-color-container shadow-box"
+           data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
+>
 
           <div class="sub-small-color-container">
 
@@ -100,7 +113,10 @@
 
         </section>
 
-        <section id ='stop-watch' class="small-color-container shadow-box">
+        <section id ='stop-watch' class="small-color-container shadow-box"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
 
           <div class="sub-small-color-container">
 
@@ -112,7 +128,10 @@
           <a class="learn-button" href="../pages-html/stop-watch.html">Learn More</a>
         </section>
 
-        <section id ='rock-paper-scissor' class="small-color-container shadow-box">
+        <section id ='rock-paper-scissor' class="small-color-container shadow-box"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
           <div class="sub-small-color-container">
 
           <h2>Rock - Scissors - Paper</h2>
@@ -127,7 +146,10 @@
         </section>
 
 
-        <section id ='guess-color' class="small-color-container shadow-box">
+        <section id ='guess-color' class="small-color-container shadow-box"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
           
           <div class="sub-small-color-container">
 
@@ -142,7 +164,10 @@
           <a class="learn-button" href="../pages-html/guess-color.html">Learn More</a>
         </section>
         
-        <section id ='guess-color' class="small-color-container shadow-box">
+        <section id ='guess-color' class="small-color-container shadow-box"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-out">
           <div class="sub-small-color-container">
 
           
@@ -180,7 +205,16 @@
     </div>
   </footer>
 
+    <!-- JavaScript file -->
 
 <script src="../JavaScript/index-project-script.js"></script>
+
+    <!-- Fade in external link -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
