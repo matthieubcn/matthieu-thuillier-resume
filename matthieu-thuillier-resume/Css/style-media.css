@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* Menu burger */
+/* Menu burger for iPhone 6/7/8 */
 
 @media only screen and (max-width: 430px){
 
@@ -64,7 +64,7 @@
   }
 }
 
-/* Iphone + * big size*/
+/* Iphone iPhone 6/7/8 Plus*/
 
 @media only screen and (max-width: 430px){
     * {
@@ -75,14 +75,54 @@
     }
 }
 
-/* TO be removed */
+/* Iphone iPhone 6/7/8 */
+
+@media only screen and (max-width: 380px){
+
+    body{
+        max-width: 400px;
+    }
+    /* resize burger menu */
+    .sidenav{
+        width:400px;
+        left: -400px;
+    }
+    iframe{
+        width:100px;
+        height:20px; 
+        margin-right: 10px;
+    }
+    .block-experience span {
+        font-size: 1.2rem;
+        color: #4B86AB
+    }
+}
+
+/* iPhone 5/SE */
+
+@media only screen and (max-width: 320px){
+    /* resize burger menu */
+    body{
+        max-width: 350px;
+    }
+    .sidenav{
+        width:330px;
+        left: -330px;
+    }
+    .block-experience span {
+        font-size: 1.1rem;
+        color: #4B86AB
+    }
+}
+
+/* To be removed from the desktop session */
 @media only screen and (max-width: 430px){
     nav {
         display: none;
     }
 }
 
-/* TO to be removed foor desktop session */
+/* TO to be removed through desktop session */
 @media only screen and (min-width: 430px){
     .hamburger-hidden {
         display: none;
@@ -93,11 +133,11 @@
 
 @media only screen and (max-width: 430px){
 
-header #top-menu{
+    header #top-menu{
     float: right;
     margin-right: 10px;
     }
-   header #top-bar-mobile{
+    header #top-bar-mobile{
         display: flex;
         justify-content: space-around;
         align-content: center;
@@ -119,7 +159,6 @@ header #top-menu{
         width: 100%;
         margin: 0 auto;
     }
-
     #about-me h2 {
         margin-top: 20px;
         margin-left: 10px;
@@ -128,16 +167,13 @@ header #top-menu{
         margin-top: 20px;
         margin-left: 10px;
      }
-
      .adress{
         margin-left: 30px;
      }
-
      #bio ul li{
         margin-left: 10px;
      }
 }
-
 
 /* Professional skilss */
 
@@ -157,7 +193,6 @@ header #top-menu{
     #professional-skills h2{
         margin-left: 10px;
     }
-
     .professional-button{
         margin-left: 10px;
     }
@@ -171,72 +206,59 @@ header #top-menu{
         font-size: 1.3rem;
         margin-left: 15px;
     }
-
     #work-experience h2{
         margin-left: 10px;
     }
-
     #auchan-hidden, #nestle-hidden{
         display: none;
     }
-
-
-.vl-1{
+    .vl-1{
     border-left: 2px solid #ccc;
     height: 330px;
     float: left;
     margin-left: 14px;
-}
-
-.vl-2{
+    }
+    .vl-2{
     border-left: 2px solid #ccc;
     height: 890px;
     float: left;
     margin-left: 14px;
-}
-
-.vl-3{
+    }
+    .vl-3{
     border-left: 2px solid #ccc;
     height: 490px;
     float: left;
     margin-left: 14px;
-}
-
-.vl-4{
+    }
+    .vl-4{
     border-left: 2px solid #ccc;
     height: 140px;
     float: left;
     margin-left: 14px;
-}
-
-
+    }
 }
 
  /* Education form */
  @media only screen and (max-width: 430px){
 
- .vl-5{
+    .vl-5{
     border-left: 2px solid #ccc;
     height: 70px;
     float: left;
     margin-left: 11px;
- }
-
- .vl-7{
+    }
+    .vl-7{
     border-left: 2px solid #ccc;
     height: 130px;
     float: left;
     margin-left: 11px;
- }
-
- #education p{
+    }
+    #education p{
     margin-top: 20px;
- }
-
- #education h2{
+    }
+    #education h2{
     margin-left: 20px;
- }
-
+    }
 }
 
 /* Reference part */
@@ -246,18 +268,15 @@ header #top-menu{
     #references h2{
         margin-left: 20px;
     }
-
     #references {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
     #reference-container{
         display: flex;
         flex-wrap: wrap;
     }
-    
     #reference-container-left, #reference-container-right{
          width: 100%;
     }
@@ -277,17 +296,13 @@ header #top-menu{
     input{
         margin-left: 30px;
     }
-
     #contact-form-container{
         margin-left: 20px;
         display: flex;
-
     }
-    
     #contact h2{
         margin-left: 20px;
     }
-
 }
 
 
