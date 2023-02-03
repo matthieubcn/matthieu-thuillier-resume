@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 /* Universal connector */
-
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     /* reset the font size */
@@ -32,7 +30,6 @@ body {
     background-color: white;
     padding:30px 0;
 }
-
 
 /* Top menu CSS */
 
@@ -123,10 +120,7 @@ header #top-menu {
     transition-delay: 200ms;
 }
 
-
 /* Hero Section */
-
-/* Must the find the way to filter the background */
 
 #hero {
     height: 500px;
@@ -135,7 +129,6 @@ header #top-menu {
     justify-content: center;
     align-items: center;
 }
-
 
 .shadow-box {
     box-shadow: 2px 2px 2px #808080;
@@ -155,7 +148,6 @@ header #top-menu {
   -o-filter: blur(5px);
   -ms-filter: blur(5px); */
 }
-
 /* .filter{
     backdrop-filter: blur(46px);
     background-color:rgba(255,255,255,0.5);
@@ -181,11 +173,9 @@ h2 {
     margin-bottom:20px;
 }
 
-
 #hero h1:hover,
 h2:hover {
     color: whitesmoke;
-
 }
 
 .hero-menu {
@@ -424,13 +414,13 @@ h2:hover {
     list-style: none;
 }
 
-#work-experience article ul li:first-child{
+.block-experience > ul li:first-child{
     font-size: 1.4rem;
     line-height: 150%;
     list-style-type: ' 🚀';
 }
 
-#work-experience article ul li:before{
+.block-experience > ul li:before{
     font-size: 1.4rem;
     line-height: 150%;
     content: "\2022";
@@ -550,7 +540,6 @@ h2:hover {
     position: absolute;
 }
 
-
 /* vertical lign */
 
 .vl-1{
@@ -634,6 +623,21 @@ h2:hover {
     color: #4B86AB;
 }
 
+
+#hidden > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden > ul li a{
+    margin-left: 5px;
+}
+
+
+
+
 #hidden span{
     font-size: 1.5rem;
     font-weight: 700;
@@ -662,8 +666,7 @@ h2:hover {
      text-decoration: none;
      color:#16191B;
      font-size: 1.3rem;
-  }
- 
+}
  
  #hidden1 li a:visited {
      color:#16191B;
@@ -674,13 +677,23 @@ h2:hover {
      color: #4B86AB;
  }
 
+ #hidden1 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden1 > ul li a{
+    margin-left: 5px;
+}
+
  #hidden1 span{
     font-size: 1.5rem;
     font-weight: 700;
     margin: 20px 20px;
     display: inline-block
 }
-
 
 #hidden2 li a {
     text-decoration: none;
@@ -690,7 +703,7 @@ h2:hover {
      text-decoration: none;
      color:#16191B;
      font-size: 1.3rem;
-  }
+}
  
  #hidden2 li a:visited {
      color:#16191B;
@@ -700,6 +713,17 @@ h2:hover {
  #hidden2 li a:hover{
      color: #4B86AB;
  }
+
+ #hidden2 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden2 > ul li a{
+    margin-left: 5px;
+}
 
  #hidden2 span{
     font-size: 1.5rem;
@@ -731,6 +755,17 @@ h2:hover {
      color: #4B86AB;
  }
 
+ #hidden3 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden3 > ul li a{
+    margin-left: 5px;
+}
+
  #hidden3 span{
     font-size: 1.5rem;
     font-weight: 700;
@@ -760,6 +795,17 @@ h2:hover {
  #hidden4 li a:hover{
      color: #4B86AB;
  }
+
+ #hidden4 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden4 > ul li a{
+    margin-left: 5px;
+}
 
  #hidden4 span{
     font-size: 1.5rem;
@@ -791,6 +837,17 @@ h2:hover {
      color: #4B86AB;
  }
 
+ #hidden5 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden5 > ul li a{
+    margin-left: 5px;
+}
+
  #hidden5 span{
     font-size: 1.5rem;
     font-weight: 700;
@@ -815,13 +872,6 @@ h2:hover {
 
 .skills-button:active{
     background-color: #F77979;
-}
-
-
-#smiley:first-child{
-    font-size: 1.4rem;
-    line-height: 150%;
-    list-style-type: '✅';
 }
 
 /* Education session */
@@ -914,9 +964,6 @@ list-style-type: '🚀'
     position: absolute;
 }
 
-
-
-
 /* Reference section */
 
 #references {
@@ -958,7 +1005,6 @@ list-style-type: '🚀'
     color: #808080;
     display: inline-block;
     padding-left: 2%;
-
 }
 
 #references h5{
@@ -994,20 +1040,17 @@ q::after{
     display: none;
 }
 
-
 /* Form CSS */
 #contact-form-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-
 #contact h2{
     font-size: 2rem;
     color:#808080;
     padding-left: 2%;
 }
-
 
 form{
     width: 50%;
@@ -1044,7 +1087,6 @@ input:hover{
     border: #60BDF7 1px solid;
 }
 
-
 form{
     display: flex;
     flex-direction: column;
@@ -1059,7 +1101,6 @@ form .submit-button {
     color: white;
     border: 1px solid white;
     cursor: pointer;
-
 }
 
 form  .submit-button:active{
@@ -1071,9 +1112,7 @@ iframe{
     width:500px;
     height:500px;
     margin-top: 30px;
-
 }
-
 
 /* Form hidden fields required */
 
@@ -1083,8 +1122,6 @@ iframe{
     font-size: 1.5rem;
     font-weight: 800;
 }
-
-
 
 /* footer part */
 
