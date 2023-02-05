@@ -28,7 +28,6 @@ const close = () => {
     console.log('the links are clicked');
 }
 
-closeLinks.addEventListener('click',close)
 
 
 // Function alert to thanks for downloading the CV//
