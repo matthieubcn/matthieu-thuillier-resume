@@ -7,8 +7,8 @@
   <title>Tips Calculator</title>
 
   <!-- CSS Links  -->
-  <link rel="stylesheet" href="../Css/stop-watch.css" />
-  <link rel="stylesheet" href="../Css/stop-watch-media-queries.css">
+  <link rel="stylesheet" href="../Css/style-tips.css" />
+  <link rel="stylesheet" href="../Css/style-tips-media.css">
 
   <!-- External link to insert the smileys -->
   <link rel="stylesheet" href="https://unpkg.com/emoji.css/dist/emoji.min.css" />
@@ -67,52 +67,48 @@
     </div>
 
 
+    <div id="tips-container" class="box-shadow">
 
-
-    <div id="tips-container">
-      
       <h3>Tips Calculator</h3>
 
       <form>
 
 
         <div id="amount-value-small-container">
-          <label for="amount-value"><img src="" alt="This is euro currency"></label>
+          <label for="amount-value"><img src="../images/euro-currency.png" alt="This is euro currency"></label>
           <input type="number" name="amount-value" id="amount-value" min="1" max="10000">
+          <span id ='errorMessage' style="color:red"></span>
         </div>
 
         <div id="tip-percentage-small-container">
-          <label for="tip-percentage">Tip</label>
-          <input type="range" min="0" max="100" value="0" class="slider" id="tip-percentage" name="tip-percentage">
+          <label for="tip-percentage">Tips</label>
+          <input type="range" min="0" max="100" value="5" class="slider" id="tip-percentage" name="tip-percentage">
+          <span id="range-value">5%</span>
+
         </div>
+
+      
+
 
       </form>
 
+
       <div id=" result-container">
-      <h2>Result</h2>
+        <h3>Result</h3>
 
-      <div id="tip-amount-small-container">
+        <div id="tip-amount-small-container">
 
-        <div class="tip-amount-sub-container">
           <span>Tip Amount</span>
+
+          <input type="number" id="tipAmount" value="" readonly>
         </div>
 
-        <div class="tip-amount-sub-container">
-          <input type="number" class="form-control" id="tipAmount" disabled>
-        </div>
-      </div>
+        <div id="bill-result-small-container">
 
-
-      <div id="bill-result-small-container">
-
-        <div class="bill-result-sub-container">
           <span>Bills to paid</span>
+          <input type="number" id="billAmount" value="" readonly>
         </div>
 
-        <div class="bill-result-sub-container">
-          <input type="number" class="form-control" id="billamount" disabled>
-        </div>
-      </div>
 
       </div>
 
@@ -150,6 +146,6 @@
   </script>
 
 
-  <script src="../JavaScript/stop-watch-script.js"></script>
+  <script src="../JavaScript/tips-script.js"></script>
 </body>
 </html>

@@ -351,6 +351,8 @@ function validateForm(event) {
     if (isValid) {
         alert(`All the fields are filled and the form has been sent properly`);
         console.log('the form has been sent');
+        document.getElementById("allErrors").innerHTML=""
+
     } else {
         document.getElementById("allErrors").innerHTML="All fields are required"
     }
