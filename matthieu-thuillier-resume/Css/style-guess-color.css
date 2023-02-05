@@ -116,7 +116,6 @@ header #top-menu {
     transition-delay: 200ms;
 }
 
-
 /* Top-bar section */
 
 #top-black-banner {
@@ -208,7 +207,6 @@ button {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	o-transition: all 0.3s;
-    padding: 20px;
     margin-left: 10px;
 }
 

@@ -1,4 +1,29 @@
-console.log('hello World')
+
+console.log('Hello World')
+
+// Create a function for the hamburger menu
+
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}
+
+
+
+
+
 
 // Function to create a slide menu to show the value;
 
