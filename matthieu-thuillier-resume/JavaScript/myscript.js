@@ -1,4 +1,4 @@
-console.log('Hello World')
+console.log('Hello World');
 
 // Create a function for the hamburger menu
 
@@ -16,8 +16,19 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  sidenav.classList.remove("active");
+    sidenav.classList.remove("active");
 }
+
+// function closeNav1() {
+//     sidenav.classList.remove('active')
+// }
+
+const close = () => {
+    sidenav.style.display ='none'
+    console.log('the links are clicked');
+}
+
+closeLinks.addEventListener('click',close)
 
 
 // Function alert to thanks for downloading the CV//
@@ -211,6 +222,45 @@ const closeMore5 = () => {
     overWritting5.style.display='block'
 }
 
+let moreSkills6 = document.getElementById('hidden6');
+let moreButton6 = document.getElementById('hidden-button6');
+let overWritting6 = document.getElementById('showmore-button6');
+
+const showMore6 = () =>{
+    moreSkills6.style.display = 'block';
+    moreButton6.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting6.style.display = 'none';
+}
+
+const closeMore6 = () => {
+    moreSkills6.style.display = 'none';
+    moreButton6.style.display = 'none';
+    overWritting6.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting6.style.display='block'
+}
+
+let moreSkills7 = document.getElementById('hidden7');
+let moreButton7 = document.getElementById('hidden-button7');
+let overWritting7 = document.getElementById('showmore-button7');
+
+const showMore7 = () =>{
+    moreSkills7.style.display = 'block';
+    moreButton7.style.display = 'block';
+    console.log('this open  button is clicked true')
+    overWritting7.style.display = 'none';
+}
+
+const closeMore7 = () => {
+    moreSkills7.style.display = 'none';
+    moreButton7.style.display = 'none';
+    overWritting7.innerHTML = 'Learn more'; // back to the original version //
+    console.log('the close button is clicked true')
+    overWritting7.style.display='block'
+}
+
+
 
 // Form section //
 
@@ -255,30 +305,54 @@ const changeTextArea = () => {
 
 message.addEventListener('click', changeTextArea)
 
-// Create a basic alert when the form is submitted //
+// Create a fucntion to make the form dynamic and inform that all the fields are required before submitting the form
 
 
-// const alertForm = () => {
-//     alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
-//     console.log('The button has been clicked and the form is pushed')
-// }
+function validateForm(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let company = document.getElementById('company').value;
+    let message = document.getElementById('message').value;
+    let isValid = true;
 
-//Crete a fucntion to trigger a valide fomr
-
-let fieldRequiredHidden = document.getElementById('form-hidden')
-
-const validateForm = () => {
-
-let nameValue=document.myform.name.value;  
-let emailValue = document.myform.email.value;
-let companyValue = document.myform.company.value;
-let messageValue = document.myform.message.value;
-
-    
-    if (nameValue == '' || emailValue == '' || companyValue == '' || messageValue === '') {
-        alert('All the fields are required')
-        fieldRequiredHidden.style.display = 'block';
+    // Create a name function if the name is less or equal of 2 caracterers
+    const newLocal = name.length <= 2;
+    if (name == "" || newLocal ) {
+        document.getElementById("nameError").innerHTML = "Name is required";
+        isValid = false;
     } else {
-        alert(`Thanks for contacting me - the form has been submitted correctly - I'll contact you as soon as possible`)
+        document.getElementById("nameError").innerHTML = "";
     }
- }
+
+    if (email == "") {
+        document.getElementById("emailError").innerHTML = "Email is required";
+        isValid = false;
+    } else if (email.indexOf('@') === -1) {
+        document.getElementById("emailError").innerHTML = "Email must contain an @";
+        isValid =false
+    } else {
+        document.getElementById("emailError").innerHTML = "";
+    }
+
+    if (company == "") {
+        document.getElementById("companyError").innerHTML = "Company name is required";
+        isValid = false;
+
+    } else {
+        document.getElementById("companyError").innerHTML = "";
+
+    } if (message == '') {
+        document.getElementById('messageError').innerHTML ='Please send me a message'
+    } else {
+        document.getElementById("messageError").innerHTML =""
+    }
+
+    if (isValid) {
+        alert(`All the fields are filled and the form has been sent properly`);
+        console.log('the form has been sent');
+    } else {
+        document.getElementById("allErrors").innerHTML="All fields are required"
+    }
+    return isValid;
+}

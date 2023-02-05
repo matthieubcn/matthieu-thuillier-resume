@@ -214,7 +214,7 @@
     }
     .vl-1{
     border-left: 2px solid #ccc;
-    height: 330px;
+    height: 310px;
     float: left;
     margin-left: 14px;
     }
@@ -236,6 +236,12 @@
     float: left;
     margin-left: 14px;
     }
+    .vl-4-last{
+    border-left: 2px solid #ccc;
+    height: 220px;
+    float: left;
+    margin-left: 14px;
+     }
 }
 
  /* Education form */

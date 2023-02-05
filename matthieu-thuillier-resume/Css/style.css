@@ -570,6 +570,15 @@ h2:hover {
     margin-left: 14px;
 }
 
+/* Nestle bar */
+
+.vl-4-last{
+    border-left: 2px solid #ccc;
+    height: 130px;
+    float: left;
+    margin-left: 14px;
+     }
+
 .vl-5{
     border-left: 2px solid #ccc;
     height: 60px;
@@ -634,9 +643,6 @@ h2:hover {
 #hidden > ul li a{
     margin-left: 5px;
 }
-
-
-
 
 #hidden span{
     font-size: 1.5rem;
@@ -859,6 +865,87 @@ h2:hover {
     display: none;
 }
 
+#hidden6 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden6 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden6 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden6 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden6 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden6 > ul li a{
+    margin-left: 5px;
+}
+
+ #hidden6 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 20px;
+    display: inline-block
+}
+
+#hidden6, #hidden6-button{
+    display: none;
+}
+
+#hidden7 li a {
+    text-decoration: none;
+ }
+ 
+ #hidden7 li a {
+     text-decoration: none;
+     color:#16191B;
+     font-size: 1.3rem;
+  }
+ 
+ #hidden7 li a:visited {
+     color:#16191B;
+     font-size: 1.5rem;
+ }
+ 
+ #hidden7 li a:hover{
+     color: #4B86AB;
+ }
+
+ #hidden7 > ul li{
+    font-size: 1.4rem;
+    line-height: 150%;
+    list-style-type: '✅';
+    margin-left: 5px;
+}
+
+#hidden7 > ul li a{
+    margin-left: 5px;
+}
+
+ #hidden7 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 20px;
+    display: inline-block
+}
+
+#hidden7, #hidden7-button{
+    display: none;
+}
 
 .skills-button{
     background-color: #60BDF7;
@@ -1121,6 +1208,10 @@ iframe{
     color: #F77979;
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+#field-name-required{
+    display: none;
 }
 
 /* footer part */

@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips Calculator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips Calculator</title>
 
-    <!-- CSS Links  -->
-    <link rel="stylesheet" href="../Css/stop-watch.css" />
-    <link rel="stylesheet" href="../Css/stop-watch-media-queries.css">
+  <!-- CSS Links  -->
+  <link rel="stylesheet" href="../Css/stop-watch.css" />
+  <link rel="stylesheet" href="../Css/stop-watch-media-queries.css">
 
-    <!-- External link to insert the smileys -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/emoji.css/dist/emoji.min.css" 
-    />
+  <!-- External link to insert the smileys -->
+  <link rel="stylesheet" href="https://unpkg.com/emoji.css/dist/emoji.min.css" />
 </head>
 <body>
-    <header>
+  <header>
 
-        <div id="top-menu">
-          <span>Matthieu Thuillier</span>
-  
-          <nav>
-            <ul>
-              <li><a href="../index.html#about-me">About</a></li>
-              <li><a href="../index.html#professional-skills">Skills</a></li>
-              <li><a href="../index.html#work-experience">Experiences</a></li>
-              <li><a href="../index.html#education">Education</a></li>
-              <li><a href="../index.html#reference">References</a></li>
-              <li><a href="../pages-html/index-project.html">Project</a></li>
-              <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-  
-        <!-- Hamburger menu -->
-  
-        <div id="top-bar-mobile" class="'hamburger-hidden">
-  
-        <div id="mySidenav" class="sidenav hamburger-hidden">
-          <a id="closeBtn" href="#" class="close">×</a>
+    <div id="top-menu">
+      <span>Matthieu Thuillier</span>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html#about-me">About</a></li>
+          <li><a href="../index.html#professional-skills">Skills</a></li>
+          <li><a href="../index.html#work-experience">Experiences</a></li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li><a href="../index.html#reference">References</a></li>
+          <li><a href="../pages-html/index-project.html">Project</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hamburger menu -->
+
+    <div id="top-bar-mobile" class="'hamburger-hidden">
+
+      <div id="mySidenav" class="sidenav hamburger-hidden">
+        <a id="closeBtn" href="#" class="close">×</a>
         <ul>
           <li><a href="../index.html">About</a></li>
           <li><a href="../index.html">Skills</a></li>
@@ -52,77 +49,107 @@
         </ul>
       </div>
     </div>
-  
-        <a href="#" id="openBtn">
-          <span class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </a>
-      </div>
-    </header>
 
-<main>
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
+    </div>
+  </header>
+
+  <main>
     <div id="top-black-banner" class="top-background">
-        <h2>Enjoy our Stop-Watch!</h2>
-        <img src="../images/stopwatch.png" alt='This is a stop-watch'>
+      <h2>Enjoy our Tips Calculator!</h2>
+      <img src="../images/tips.png" alt='This is a tips image'>
     </div>
 
-    <div id="stop-watch-container" class="box-color">
 
-      <div id="title-container">
-        <h2>Stop-Watch</h2>
-        <h3>Get in time as Usan Bolt</h3>
-      </div>
-    
-      <div id="result-container">
 
-      <p><span id="seconds">00</span><span id='middle'>:</span><span id="tens">00</span></p>
+
+    <div id="tips-container">
+      
+      <h3>Tips Calculator</h3>
+
+      <form>
+
+
+        <div id="amount-value-small-container">
+          <label for="amount-value"><img src="" alt="This is euro currency"></label>
+          <input type="number" name="amount-value" id="amount-value" min="1" max="10000">
+        </div>
+
+        <div id="tip-percentage-small-container">
+          <label for="tip-percentage">Tip</label>
+          <input type="range" min="0" max="100" value="0" class="slider" id="tip-percentage" name="tip-percentage">
+        </div>
+
+      </form>
+
+      <div id=" result-container">
+      <h2>Result</h2>
+
+      <div id="tip-amount-small-container">
+
+        <div class="tip-amount-sub-container">
+          <span>Tip Amount</span>
+        </div>
+
+        <div class="tip-amount-sub-container">
+          <input type="number" class="form-control" id="tipAmount" disabled>
+        </div>
       </div>
-      <div id="button-container">
-        <button id="button-start" class="start-button">Start</button>
-        <button id="button-stop" class="start-button">Stop</button>
-        <button id="button-reset"  class="start-button">Reset</button>
+
+
+      <div id="bill-result-small-container">
+
+        <div class="bill-result-sub-container">
+          <span>Bills to paid</span>
+        </div>
+
+        <div class="bill-result-sub-container">
+          <input type="number" class="form-control" id="billamount" disabled>
+        </div>
+      </div>
 
       </div>
 
     </div>
 
-</main>
+  </main>
 
-<footer>
-  <h3>Matthieu Thuillier</h3>
+  <footer>
+    <h3>Matthieu Thuillier</h3>
 
-  <div class="footer-logo">
-    <img src="../images/instagram.png" alt="this is a logo" />
-    <img
-      src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
-      alt="this is a logo"
-    />
-    <img src="../images/github-mark.png" alt="this a git logo" />
-  </div>
+    <div class="footer-logo">
+      <img src="../images/instagram.png" alt="this is a logo" />
+      <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
+        alt="this is a logo" />
+      <img src="../images/github-mark.png" alt="this a git logo" />
+    </div>
 
-  <div class="footer-credit-container">
-    <p>© Material Resume</p>
-    <p>All rights reserved.</p>
+    <div class="footer-credit-container">
+      <p>© Material Resume</p>
+      <p>All rights reserved.</p>
 
-    <p>
-      Made with <img class="black-heart" src="../images/freeheart.png" />
-    </p>
-  </div>
-</footer>
+      <p>
+        Made with <img class="black-heart" src="../images/freeheart.png" />
+      </p>
+    </div>
+  </footer>
 
-<!-- JavaScript file -->
+  <!-- JavaScript file -->
 
-<!-- Fade in external link -->
+  <!-- Fade in external link -->
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
-<script src="../JavaScript/stop-watch-script.js"></script>
+  <script src="../JavaScript/stop-watch-script.js"></script>
 </body>
 </html>
