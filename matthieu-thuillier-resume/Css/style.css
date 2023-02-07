@@ -30,9 +30,7 @@ body {
     background-color: white;
     padding:30px 0;
     transition: box-shadow 0.5s ease;
-
 }
-
 
 /* Top menu CSS */
 
@@ -45,7 +43,7 @@ header #top-menu {
     margin-right: 14%;
 }
 
-#top-menu span {
+#top-menu #logo {
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -179,7 +177,7 @@ h2 {
 #hero h1:hover,
 h2:hover {
     color: whitesmoke;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .hero-menu {
@@ -330,9 +328,9 @@ h2:hover {
 }
 
 #professional-skills span {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* extand to 100% to push it to the next row */
@@ -345,8 +343,8 @@ h2:hover {
 }
 
 #professional-skills h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.6rem;
+    margin: 10px 0 
 }
 
     .professional-skills-left,
@@ -357,7 +355,7 @@ h2:hover {
 .skills-small-box {
     width: 90%;
     background-color: #F2F2F2;
-    height: 15px;
+    height: 17px;
     border-radius: 10px;
     margin: 10px 0;
 }
@@ -365,7 +363,7 @@ h2:hover {
 .skills-progress-advanced {
     width: 90%;
     background-color: #4B86AB;
-    height: 14px;
+    height: 17px;
     margin: auto 0;
     border-radius: 10px;
 }
@@ -373,7 +371,7 @@ h2:hover {
 .skills-progress-intermediate {
     width: 80%;
     background-color: #F7F692;
-    height: 14px;
+    height: 17px;
     margin: auto 0;
     border-radius: 10px;
 }
@@ -381,7 +379,7 @@ h2:hover {
 .skills-progress-intermediate-one {
     width: 70%;
     background-color: #F7F692;
-    height: 14px;
+    height: 17px;
     margin: auto 0;
     border-radius: 10px;
 }
@@ -394,6 +392,7 @@ h2:hover {
     border-radius: 10px;
     padding: 10px 30px;
     font-size:1.4rem;
+    margin-top: 20px;
 }
 
 .professional-button:active{

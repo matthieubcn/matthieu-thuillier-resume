@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tips Calculator</title>
+  <title>Stop-Watch</title>
 
   <!-- CSS Links  -->
-  <link rel="stylesheet" href="../Css/style-tips.css" />
-  <link rel="stylesheet" href="../Css/style-tips-media.css">
+  <link rel="stylesheet" href="../Css/style-rock-paper-scissor.css" />
+  <link rel="stylesheet" href="../Css/style-rock-paper-scissor-media-queries.css">
 
   <!-- External link to insert the smileys -->
   <link rel="stylesheet" href="https://unpkg.com/emoji.css/dist/emoji.min.css" />
@@ -62,55 +62,29 @@
 
   <main>
     <div id="top-black-banner" class="top-background">
-      <h2>Enjoy our Tips Calculator!</h2>
-      <img src="../images/tips.png" alt='This is a tips image'>
+      <h2>Enjoy our Rock Paper Scissor</h2>
+      <img src="../images/rock-paper-scissor.png" alt='This is a rock-paper-scissor'>
     </div>
 
 
-    <div id="tips-container" class="box-shadow">
+    <div class="sub-container background-color">
+      <h3>Rock-Paper-Scissors</h3>
+      <div id="choice-container">
 
-      <h3>Tips Calculator</h3>
-
-      <form>
-
-
-        <div id="amount-value-small-container">
-          <label for="amount-value"><img src="../images/euro-currency.png" alt="This is euro currency"></label>
-          <input type="number" name="amount-value" id="amount-value" min="1" max="10000">
-          <span id ='errorMessage' style="color:red"></span>
+        <div class="choice" id="rock">Rock
+          <img src="../images/rock.png" alt="this is rock picture">
         </div>
 
-        <div id="tip-percentage-small-container">
-          <label for="tip-percentage">Tips</label>
-          <input type="range" min="0" max="100" value="5" class="slider" id="tip-percentage" name="tip-percentage">
-          <span id="range-value">5%</span>
-
+        <div class="choice" id="paper">Paper
+          <img src="../images/paper.png" alt="this is a paper picture">
         </div>
 
-
-
-      </form>
-
-
-      <div id=" result-container">
-        <h3>Result</h3>
-
-        <div id="tip-amount-small-container">
-
-          <span>Tip Amount</span>
-
-          <input type="number" id="tipAmount" value="" readonly>
+        <div class="choice" id="scissors">Scissors
+        <img src="../images/paper.png" alt="this is a paper picture">
         </div>
-
-        <div id="bill-result-small-container">
-
-          <span>Bills to paid</span>
-          <input type="number" id="billAmount" value="" readonly>
-        </div>
-
 
       </div>
-
+      <div id="result"></div>
     </div>
 
 
@@ -147,6 +121,6 @@
   </script>
 
 
-  <script src="../JavaScript/tips-script.js"></script>
+  <script src="../JavaScript/rock-paper-scissor.js"></script>
 </body>
 </html>

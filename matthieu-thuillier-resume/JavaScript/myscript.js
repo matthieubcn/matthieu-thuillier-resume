@@ -19,15 +19,14 @@ function closeNav() {
     sidenav.classList.remove("active");
 }
 
-// function closeNav1() {
-//     sidenav.classList.remove('active')
-// }
+
 
 const close = () => {
     sidenav.style.display ='none'
     console.log('the links are clicked');
 }
 
+// Function to highlight my name
 
 
 // Function alert to thanks for downloading the CV//

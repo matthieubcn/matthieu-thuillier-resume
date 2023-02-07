@@ -136,99 +136,80 @@ header #top-menu {
 
 /* Section tips section*/
 
-
-/* Inputs style */
-
-.box-shadow {
-    margin: 40px auto;
-    box-shadow: 2px 2px 2px #808080;
-    border-radius: 10px;
-    background-color: white;
-    padding:30px 0;
-    width: 50%;
+.background-color{
+box-shadow: 2px 2px 2px #808080;
+border-radius: 10px;
+margin: 30px 0;
+background-color: white;
+padding:30px 0;
+transition: box-shadow 0.5s ease;
 }
 
-#tips-container h3,
-#result-container h3{
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
-}
 
-#amount-value-small-container img{
-    width: 50px;
-    
-} 
-
-label, span{
-    font-size: 1.6rem;
-    display: block;
-    margin: 20px;
-    font-weight:700;
-    
-}
-
-input{
-    padding: 10px;
-    display: inline-block;
-    width: 70%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-    transition: box-shadow 0.3s, border 0.3s;
-}
-
-input:focus{
-    border-color: #66afe9;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
-    outline: none;
-}
-
-#tip-percentage{
-    width: 70%;
-    margin-left: 20px;
-}
-
-/* Flex display */
-
-#tips-container > div{
+.sub-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  h3 {
+      margin-bottom: 50px;
+    text-shadow: 2px 2px lightgray;
+    font-size: 3rem;
+  }
+  
+  #choice-container {
+    display: flex;
     justify-content: space-between;
-}
+    width: 80%;
 
-
-#amount-value-small-container{
+  }
+  
+  .choice {
+    padding: 60px;
+    border: 4px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px lightgray;
     display: flex;
-    align-items: center;
-    margin-left: 20px;
-    
-}
+  }
+  
+  .choice:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 12px lightgray;
+    color: #4B86AB;
+  }
 
-#tip-percentage-small-container{
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    
-}
+  #choice-container img{
+    width: 30%;
+  }
+  
+  #result {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-shadow: 2px 2px lightgray;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 90%;
+    text-align: center;
+  }
 
+  #result p{
+    font-size: 1.5rem;
+  }
 
-#tip-amount-small-container{
-    display: flex;
-    align-items: center;
-}
-
-
-#bill-result-small-container{
-    display: flex;
-    align-items: center;
-}
-
-
-
-
+  #result span{
+    font-size: 1.5rem;
+    color: #4B86AB;
+    text-transform: uppercase;
+  }
 
 /* ่้footer  */
 
