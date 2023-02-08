@@ -490,6 +490,7 @@ h2 {
 .calendar-container1 {
     display: flex;
     margin-left: 40px;
+    
 }
 
 .calendar-container{
@@ -594,7 +595,7 @@ h2 {
 
 .vl-5{
     border-left: 2px solid #ccc;
-    height: 60px;
+    height: 100px;
     float: left;
     margin-left: 11px;
 }
@@ -620,7 +621,7 @@ h2 {
 
 .top-block-experience-container{
     display: flex;
-    align-items: center;
+    align-items: flex-end
 }
 
 /* hidden section using Javascipt function  and skills button*/
@@ -992,7 +993,7 @@ h2 {
 
 #education h4{
     font-size: 1.3rem;
-    margin-top: 15px;
+    margin-top: 1opx;
     margin-left: 2px;
 
 }
@@ -1007,7 +1008,7 @@ h2 {
 #education p{
     font-size: 1.4rem;
     margin-left: 59px;
-    margin-top: 20px;
+    margin-top: 5px;
 
 }
 
@@ -1019,6 +1020,7 @@ h2 {
     font-size: 1.4rem;
     display: inline-block;
     margin-top: 10px;
+    color: #4B86AB;
 }
 
 
@@ -1036,8 +1038,7 @@ list-style-type: '🚀'
 /* Create this fake container to adjust it */
 .flex-container{
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: baseline;
 }
 
 /* Make the seconde circle for the education */

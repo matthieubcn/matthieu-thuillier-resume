@@ -132,5 +132,24 @@ function reset() {
   }
 
 
+// Function type writting
 
+
+const typewriter = (element, text, speed) => {
+	window.addEventListener('load', () => {
+  
+		let i = 0;
+		function type() {
+			if (i < text.length) {
+				element.innerHTML += text.charAt(i);
+				i++;
+				setTimeout(type, speed);
+			}
+		};
+		type();
+	});
+  };
+  
+  const target = document.querySelector('.typewriter');
+  typewriter(target, 'Guess the right color', 200);
 

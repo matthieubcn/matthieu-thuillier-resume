@@ -22,9 +22,6 @@ function closeNav() {
 
 
 
-
-
-
 // Function to create a slide menu to show the value;
 
 
@@ -70,3 +67,23 @@ billAmount.addEventListener('input', () => {
 
 
         
+// Function type writting
+
+
+const typewriter = (element, text, speed) => {
+  window.addEventListener('load', () => {
+
+      let i = 0;
+      function type() {
+          if (i < text.length) {
+              element.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(type, speed);
+          }
+      };
+      type();
+  });
+};
+
+const target = document.querySelector('.typewriter');
+typewriter(target, 'Tips Collector', 200);

@@ -75,3 +75,5 @@ const typewriter = (element, text, speed) => {
   
 const target = document.querySelector('.typewriter');
 typewriter(target, 'Enjoy our calculator', 200);
+
+

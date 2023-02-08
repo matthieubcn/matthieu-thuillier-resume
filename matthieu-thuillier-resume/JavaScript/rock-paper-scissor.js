@@ -66,3 +66,24 @@ function showResult(winner, userChoice, computerChoice) {
     <p>Result: <span>${winner}</span></p>
   `;
 }
+
+// Function type writting
+
+
+const typewriter = (element, text, speed) => {
+  window.addEventListener('load', () => {
+
+      let i = 0;
+      function type() {
+          if (i < text.length) {
+              element.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(type, speed);
+          }
+      };
+      type();
+  });
+};
+
+const target = document.querySelector('.typewriter');
+typewriter(target, 'Rock Paper Scissor', 200);

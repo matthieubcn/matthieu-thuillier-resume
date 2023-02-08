@@ -159,8 +159,9 @@ header #top-menu{
 @media only screen and (max-width: 430px){
   
   #top-black-banner h2{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     color: white;
+    text-align: center;
 }
 
   #top-black-banner{
