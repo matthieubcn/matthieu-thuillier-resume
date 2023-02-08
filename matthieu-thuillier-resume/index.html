@@ -93,8 +93,7 @@
         <a class="hero-button hero-button-one" onclick="alertDownload()"
           href="https://www.dropbox.com/s/1ezt1xlybvs85by/MatthieuThuillier-CV2023.pdf?dl=0"
           target="_blank">Download</a>
-        <a class="hero-button hero-button-two" href="#contact"
-          target="_blank">Hire me</a>
+        <a class="hero-button hero-button-two" href="#contact" target="_blank">Hire me</a>
       </div>
     </div>
   </header>
@@ -261,7 +260,7 @@
             <li><a href="">Team Management</a></li>
             <li><a href="">Monitoring KPIS</a></li>
             <li><a href="">Development of New Products
-            </a></li>
+              </a></li>
             <li><a href=""> Decision-Making Skills</a></li>
           </ul>`
 
@@ -688,7 +687,7 @@
             Made Fundraising, sponsorship development qualitative research on
             tours provided
           </li>
-          
+
         </ul>
 
         <button id="showmore-button6" class="skills-button" onclick="showMore6()">
@@ -927,7 +926,7 @@
           <input @onclick="changeInputBackground()" type="text" name="name" id="name" maxlength="300"
             placeholder="Steve Wozniak" id='inputFormName' />
 
-            <span id="nameError" style="color:red"></span>
+          <span id="nameError" style="color:red"></span>
 
 
           <label for="email">Email</label>
@@ -960,9 +959,10 @@
 
 
 
-          <button class="submit-button" ` type="submit" value="submit" onclick="return validateForm(event)">Submit </button>
+          <button class="submit-button" ` type="submit" value="submit" onclick="return validateForm(event)">Submit
           </button>
-          
+          </button>
+
           <span id="allErrors" style="color:red"></span>
 
         </form>
@@ -972,7 +972,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.0427505930415!2d2.1428569!3d41.37315590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49882fbbdbc23%3A0xffd2d47a2bfaf92c!2sCarrer%20de%20Portugalete%2C%2017%2C%2008014%20Barcelona!5e0!3m2!1sfr!2ses!4v1674738389379!5m2!1sfr!2ses"
             style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-  
+
 
       </div>
     </section>
@@ -1008,5 +1008,61 @@
   <script>
     AOS.init();
   </script>
+
+
+  <!--Firebase configuration-->
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBxQ_aC9u1jE3BLimcCk-M8bGLVbCRp36E",
+      authDomain: "cv-matthieuthuillier.firebaseapp.com",
+      projectId: "cv-matthieuthuillier",
+      storageBucket: "cv-matthieuthuillier.appspot.com",
+      messagingSenderId: "407282066095",
+      appId: "1:407282066095:web:881e3b78c96da552082a5a",
+      measurementId: "G-ZNZRKMPDLB"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+
+    //Function to get the form data//
+    const form = document.querySelector("#form");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.querySelector("#name").value;
+      const email = document.querySelector("#email").value;
+      const company = document.querySelector("#company").value;
+      const companySize = document.querySelector("#message").value;
+      const message = document.querySelector("#message").value;
+
+      firebase.database().ref("users").push({
+        name,
+        email,
+        company,
+        companySize,
+        message,
+
+      });
+
+    });
+
+
+  </script>
+
+
+
 </body>
 </html>
