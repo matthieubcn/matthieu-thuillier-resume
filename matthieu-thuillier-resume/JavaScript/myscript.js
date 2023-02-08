@@ -1,4 +1,4 @@
-console.log('Hello World');
+// console.log('Hello World');
 
 // Create a function for the hamburger menu
 
@@ -21,10 +21,10 @@ function closeNav() {
 
 
 
-const close = () => {
-    sidenav.style.display ='none'
-    console.log('the links are clicked');
-}
+// const close = () => {
+//     sidenav.style.display ='none'
+//     console.log('the links are clicked');
+// }
 
 // Function to highlight my name
 
@@ -358,7 +358,6 @@ function validateForm(event) {
 }
 
 
-// 
 const firebaseConfig = {
     apiKey: "AIzaSyBlQZGwpr_dbOUalGkVaLT0kkctW8ucBXs",
     authDomain: "cv-matthieu-form.firebaseapp.com",
@@ -367,43 +366,80 @@ const firebaseConfig = {
     storageBucket: "cv-matthieu-form.appspot.com",
     messagingSenderId: "719188798728",
     appId: "1:719188798728:web:c7752bee8a24b1f13250bd"
-  };
+    };
 
-  // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-let contactFormDB = firebase.database().ref("contact-form");
+// Get a reference to the Firebase database
+let database = firebase.database();
 
-let contactForm = firebase.database().ref('contact-form');
+// Get a reference to the form
+let form = document.getElementById("contact-form");
 
-document.getElementById('contact-form').addEventListener('submit',submitForm)
+// Add a submit event listener to the form
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
 
-function submitForm(e) {
-    e.preventDefault();
+  // Get the values of the form fields
+  let name1 = form.elements.name.value;
+  let email1 = form.elements.email.value;
+  let company1 = form.elements.company.value;
+  let companySize1 = form.elements.companySize.value;
+    let message1 = form.elements.message.value;
+
+  // Save the form data to Firebase
+  database.ref("contact-form").push({
+    name1: name1,
+    email1: email1,
+    company1: company1,
+    companySize1: companySize1,
+    message1: message1
+  });
     
-    let name1 = getElementVal('name')
-    let email1 = getElementVal('email')
-    let company1 = getElementVal('company')
-    let companySize1 = getElementVal('company-size')
-    let message1 = getElementVal('message')
+  console.log("Form data:", { name1, email1, company1, companySize1, message1 });
 
-    saveMessages(name1, email1, company1, companySize1, message1);
-    console.log(name1,email1)
+});
 
-    document.getElementById("contactForm").reset();
-}
-    const saveMessages = (name1, email1, company1, companySize1,message1) => {
-        let newContactForm = contactFormDB.push();
-      
-        newContactForm.set({
-          name1: name1,
-          email1: email1,
-            company1: company1,
-            companySize1: companySize1,
-          message1:message1
-        });
-      };
+// 
 
-const getElementVal = (id) => {
-    return document.getElementById(id).value
-};
+
+// // reference your database
+// var contactFormDB = firebase.database().ref("contact-form");
+
+// document.getElementById("contact-form").addEventListener("submit", submitForm);
+
+// function submitForm(e) {
+//   e.preventDefault();
+
+// var name1 = getElementVal('name')
+// let email1 = getElementVal('email')
+// let company1 = getElementVal('company')
+// let companySize1 = getElementVal('company-size')
+// let message1 = getElementVal('message')
+    
+
+//     saveMessages(name1, email1, company1, companySize1, message1);
+    
+//     console.log(name1)
+
+//   //   reset the form
+//   document.getElementById("contact-form").reset();
+// }
+
+// const saveMessages = (name1, email1, company1, companySize1, message1) => {
+//   var newContactForm = contactFormDB.push();
+
+//   newContactForm.set({
+//     name1: name1,
+//     email1: email1,
+//     company1: company1,
+//     companySize1: companySize1,
+//     message1: message1,
+//   });
+// };
+
+// const getElementVal = (id) => {
+//   return document.getElementById(id).value;
+// };
+
+

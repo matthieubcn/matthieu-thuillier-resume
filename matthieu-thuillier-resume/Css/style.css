@@ -175,7 +175,7 @@ h2 {
 }
 
 #hero h1:hover,
-h2:hover {
+#hero h2:hover {
     color: whitesmoke;
     transform: scale(1.1);
 }
@@ -331,7 +331,10 @@ h2:hover {
     font-size: 1.5rem;
     display: inline-block;
     margin-top: 15px;
-}
+    font-weight: 400;
+    }
+    
+
 
 /* extand to 100% to push it to the next row */
 #professional-skills h2 {
@@ -417,6 +420,7 @@ h2:hover {
     list-style: none;
 }
 
+
 .block-experience > ul li:first-child{
     font-size: 1.4rem;
     line-height: 150%;
@@ -462,6 +466,8 @@ h2:hover {
 
 .block-experience span{
     font-size: 1.4rem;
+    color: #4B86AB;
+
 }
 
 .block-experience h4{
@@ -480,6 +486,10 @@ h2:hover {
 .calendar-container{
     display: flex;
     margin-left:30px;
+}
+.calendar-container1 {
+    display: flex;
+    margin-left: 40px;
 }
 
 .calendar-container{
@@ -983,25 +993,26 @@ h2:hover {
 #education h4{
     font-size: 1.3rem;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 2px;
 
 }
 
 #education article ul li{
     font-size: 1.4rem;
     line-height: 150%;
-    margin-left: 50px;
+    margin-left: 60px;
+    padding-top: 10px;
 }
 
 #education p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-left: 59px;
     margin-top: 20px;
 
 }
 
 #education article ul {
-    list-style: none
+    list-style: ''
 }
 
 #education span {
