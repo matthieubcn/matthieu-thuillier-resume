@@ -356,3 +356,54 @@ function validateForm(event) {
     }
     return isValid;
 }
+
+
+// 
+const firebaseConfig = {
+    apiKey: "AIzaSyBlQZGwpr_dbOUalGkVaLT0kkctW8ucBXs",
+    authDomain: "cv-matthieu-form.firebaseapp.com",
+    databaseURL: "https://cv-matthieu-form-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "cv-matthieu-form",
+    storageBucket: "cv-matthieu-form.appspot.com",
+    messagingSenderId: "719188798728",
+    appId: "1:719188798728:web:c7752bee8a24b1f13250bd"
+  };
+
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+let contactFormDB = firebase.database().ref("contact-form");
+
+let contactForm = firebase.database().ref('contact-form');
+
+document.getElementById('contact-form').addEventListener('submit',submitForm)
+
+function submitForm(e) {
+    e.preventDefault();
+    
+    let name1 = getElementVal('name')
+    let email1 = getElementVal('email')
+    let company1 = getElementVal('company')
+    let companySize1 = getElementVal('company-size')
+    let message1 = getElementVal('message')
+
+    saveMessages(name1, email1, company1, companySize1, message1);
+    console.log(name1,email1)
+
+    document.getElementById("contactForm").reset();
+}
+    const saveMessages = (name1, email1, company1, companySize1,message1) => {
+        let newContactForm = contactFormDB.push();
+      
+        newContactForm.set({
+          name1: name1,
+          email1: email1,
+            company1: company1,
+            companySize1: companySize1,
+          message1:message1
+        });
+      };
+
+const getElementVal = (id) => {
+    return document.getElementById(id).value
+};
