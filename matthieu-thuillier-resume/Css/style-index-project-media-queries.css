@@ -2,7 +2,7 @@
 
 /* Menu burger */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 770px) {
   .sidenav {
     height: 100%;
     width: 420px;
@@ -74,14 +74,14 @@
 }
 
 /* To be removed */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 770px) {
   nav {
     display: none;
   }
 }
 
 /* To be removed for desktop session */
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 770px) {
   .hamburger-hidden {
     display: none;
   }
@@ -172,5 +172,55 @@
   }
   .footer-logo img {
     margin: 20px;
+  }
+}
+
+/* Resize for Ipad  */
+
+@media only screen and (max-width: 770px) {
+  header #top-menu {
+    float: right;
+    margin-right: 10px;
+  }
+  header #top-bar-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and  (min-width: 430px) and (max-width: 770px) {
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .small-color-container h2 {
+    font-size: 3rem;
+    color: #808080;
+  }
+
+  .small-color-container {
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+  }
+
+  #main-container a {
+    margin-top: 10px;
+  }
+  #main-container img {
+    width: 20%;
+  }
+  #main-container img:hover {
+    width: 22%;
+    transition: width 300ms ease-in;
+  }
+  #main-container p {
+    font-size: 1.5rem;
   }
 }

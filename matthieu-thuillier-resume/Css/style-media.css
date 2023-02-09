@@ -132,14 +132,14 @@
 }
 
 /* To be removed from the desktop session */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 770px) {
   nav {
     display: none;
   }
 }
 
 /* To  be removed through desktop session */
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 770px) {
   .hamburger-hidden {
     display: none;
   }
@@ -343,3 +343,93 @@
     margin: 20px;
   }
 }
+
+/* Media queries for Tablet */
+
+/*  IPAD Size: 768x1024 (Portrait), Ratio: 3:4
+ */
+ @media only screen and (max-width: 770px) {
+
+ .sidenav {
+    height: 100%;
+    width: 420px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: -420px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.6s ease-in-out;
+  }
+
+  .sidenav a:hover {
+    /* color: #111; */
+    color: #60bdf7;
+    transition: color 0.4s ease-in-out;
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    transform: rotate(135deg);
+    transition: left 0.5s ease;
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 3px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+    header #top-menu {
+      float: right;
+      margin-right: 10px;
+    }
+    header #top-bar-mobile {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      margin-top: 10px;
+    }
+    #contact-form-container{
+        display: flex;
+        justify-content: center;
+    }
+    #contact h2{
+        text-align: center;
+    }
+    
+
+  }
+
+
+

@@ -236,3 +236,54 @@ footer p {
   position: relative;
   margin: 10px;
 }
+
+/* Pop Up quiz */
+
+#survey-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  background-color: #ffa500;
+  padding: 20px;
+  box-shadow: 2px 2px 2px #808080;
+  z-index: 1;
+  text-align: center;
+}
+
+#close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close-button:hover,
+#close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#survey-bar h2{
+  font-size: 2rem;
+}
+#survey-bar p{
+  font-size: 1.4rem;
+}
+
+#submit-survey-button {
+padding: 10px 20px;
+border-radius: 5px;
+background-color:  #ffa500;
+color: white;
+border: 2px solid white;
+cursor: pointer;
+font-size: 1.5rem;
+margin-top: 5px;
+}
+
+label{
+  font-size: 1.5rem;
+}
