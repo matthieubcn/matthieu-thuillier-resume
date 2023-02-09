@@ -127,6 +127,10 @@
     #hidden-smallest-screen{
         display: none;
     }
+    
+    #hero h1, h2{
+        text-align: center;
+    }
 }
 
 /* To be removed from the desktop session */

@@ -57,26 +57,61 @@ const alertDownload = () => {
 };
 
 // Function for the newsletter bar:
-document.querySelector("#accept-cookies-button").addEventListener("click", function() {
-    document.cookie = "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;";
-    document.querySelector(".cookie-container").style.display = "none";
-    document.querySelector(".newsletter-bar").style.display = "block";
-    setTimeout(function() {
-      document.querySelector(".newsletter-bar").style.display = "none";
-    }, 5000);
-  });
+// document.querySelector("#accept-cookies-button").addEventListener("click", function() {
+//     document.cookie = "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
+//     document.querySelector(".cookie-container").style.display = "none";
+//     document.querySelector(".newsletter-bar").style.display = "block";
+//     setTimeout(function() {
+//       document.querySelector(".newsletter-bar").style.display = "none";
+//     }, 5000);
+//   });
 
-  if (!document.cookie.includes("cookies-accepted=true")) {
-    document.querySelector(".cookie-container").style.display = "block";
-  } else {
-    document.querySelector(".newsletter-bar").style.display = "block";
-    setTimeout(function() {
-      document.querySelector(".newsletter-bar").style.display = "none";
-    }, 5000);
-
+//   if (!document.cookie.includes("cookies-accepted=true")) {
+//     document.querySelector(".cookie-container").style.display = "block";
+//   } else {
+//     document.querySelector(".newsletter-bar").style.display = "block";
+//     setTimeout(function() {
+//       document.querySelector(".newsletter-bar").style.display = "none";
+//     }, 5000)
       
+//   }
+
+// Check if cookies have been accepted
+if (document.cookie.indexOf("cookies-accepted=true") === -1) {
+    // Show cookies banner
+    document.querySelector(".cookie-container").style.display = "block";
+  
+    // Handle cookies acceptance
+    document.querySelector("#accept-cookies-button").addEventListener("click", function() {
+      // Set cookies accepted flag
+      document.cookie = "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;";
+  
+      // Hide cookies banner
+      document.querySelector(".cookie-container").style.display = "none";
+  
+      // Show newsletter bar
+      document.querySelector(".newsletter-bar").style.display = "block";
+  
+      // Set timeout to hide newsletter bar
+      setTimeout(function() {
+        document.querySelector(".newsletter-bar").style.display = "none";
+      }, 5000);
+    });
+  } else {
+    // Hide cookies banner
+    document.querySelector(".cookie-container").style.display = "none";
+  
+    // Show newsletter bar
+    document.querySelector(".newsletter-bar").style.display = "block";
+  
+    // Set timeout to hide newsletter bar
+    setTimeout(function() {
+      document.querySelector(".newsletter-bar").style.display = "none";
+    }, 5000);
   }
-    
+
+  
+  
 // function to generate randowm color for the skills bars //
 
 // USe the button to change the color of the whole classes of skills progress advancesd 
