@@ -324,6 +324,60 @@ h2 {
     transition-duration: 100ms;
 }
 
+/* news letter bar  and cookies bar*/
+
+
+  .newsletter-bar,
+  .cookie-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: #ffa500;
+    text-align: center;
+    z-index: 5; /* be carefull with this z index */
+    left: 0;
+    color: white;
+  }
+
+  .cookie-container h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  } 
+
+  .cookie-container p{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  #accept-cookies-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:  #ffa500;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+
+  #accept-cookies-button:hover{
+    background-color: #F2640A
+  }
+
+  #accept-cookies-button:active{
+    background-color: #45F22E
+  }
+
+
+
+.newsletter-bar p{
+    font-size: 2rem;
+    z-index: 2;
+}
+
+
+
 /* About me section */
 
 #about-me {

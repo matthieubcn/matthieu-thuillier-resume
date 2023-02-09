@@ -56,9 +56,30 @@ const alertDownload = () => {
     console.log('The button is clicked')
 };
 
+// Function for the newsletter bar:
+document.querySelector("#accept-cookies-button").addEventListener("click", function() {
+    document.cookie = "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;";
+    document.querySelector(".cookie-container").style.display = "none";
+    document.querySelector(".newsletter-bar").style.display = "block";
+    setTimeout(function() {
+      document.querySelector(".newsletter-bar").style.display = "none";
+    }, 5000);
+  });
+
+  if (!document.cookie.includes("cookies-accepted=true")) {
+    document.querySelector(".cookie-container").style.display = "block";
+  } else {
+    document.querySelector(".newsletter-bar").style.display = "block";
+    setTimeout(function() {
+      document.querySelector(".newsletter-bar").style.display = "none";
+    }, 5000);
+
+      
+  }
+    
 // function to generate randowm color for the skills bars //
 
-// USe the button ti change the color of the whole classes of skills progress advancesd 
+// USe the button to change the color of the whole classes of skills progress advancesd 
 function setBg() {
     let changeColor = document.querySelectorAll('.skills-progress-advanced');
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
