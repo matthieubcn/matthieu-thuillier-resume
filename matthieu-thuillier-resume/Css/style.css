@@ -156,12 +156,85 @@ header #top-menu {
     
 } */
 
+
+/* Carrousel */
+
+.carousel {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  #slide1 {
+    background-image: url('../images/pexels-derice-jason-fahnkow-1595244.jpg');
+  }
+  
+  #slide2 {
+    background-image: url('../images/building.jpg');
+
+  }
+  
+  #slide3 {
+    background-image: url('../images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg');
+
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+  .buttons-carousel {
+    text-align: center;
+    z-index: 3;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:white;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+  }
+ 
+  .active-dot {
+    background-color: #717171;
+  }
+
+  .bar {
+    height: 5px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.6s ease;
+  }
+
 #hero .avatar {
     width: 150px;
     height: 150px;
     border: 4px solid white;
     border-radius: 2%;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 #hero h1,
@@ -172,11 +245,13 @@ h2 {
     z-index: 1;
     margin-top: 10px;
     margin-bottom:20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #hero h1:hover,
 #hero h2:hover {
-    color: whitesmoke;
+    color: orange;
     transform: scale(1.1);
 }
 
@@ -197,10 +272,12 @@ h2 {
 #hero nav img {
     padding: 0 20px;
     filter: invert(80%);
+
 }
 #hero nav img:hover {
     padding: 0 20px;
     filter: invert(100%);
+
 }
 
 .hero-logo {
@@ -465,7 +542,7 @@ h2 {
 }
 
 .block-experience span{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: #4B86AB;
 
 }
@@ -621,7 +698,7 @@ h2 {
 
 .top-block-experience-container{
     display: flex;
-    align-items: flex-end
+    align-items: center;
 }
 
 /* hidden section using Javascipt function  and skills button*/
@@ -661,7 +738,7 @@ h2 {
 #hidden span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -711,7 +788,7 @@ h2 {
  #hidden1 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -748,7 +825,7 @@ h2 {
  #hidden2 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -789,7 +866,7 @@ h2 {
  #hidden3 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -830,7 +907,7 @@ h2 {
  #hidden4 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -871,7 +948,7 @@ h2 {
  #hidden5 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -912,7 +989,7 @@ h2 {
  #hidden6 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -953,7 +1030,7 @@ h2 {
  #hidden7 span{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: inline-block
 }
 
@@ -1017,7 +1094,7 @@ h2 {
 }
 
 #education span {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     display: inline-block;
     margin-top: 10px;
     color: #4B86AB;

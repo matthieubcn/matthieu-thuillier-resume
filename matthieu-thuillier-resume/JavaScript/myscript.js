@@ -20,39 +20,57 @@ function closeNav() {
 }
 
 
+// Function for the carouselle
 
-// const close = () => {
-//     sidenav.style.display ='none'
-//     console.log('the links are clicked');
-// }
+var slideIndex = 0;
+showSlides();
 
-// Function to highlight my name
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.opacity = 1;
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 
+  var dots = document.getElementsByClassName("dot");
+  var bar = document.getElementsByClassName("bar")[0];
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+  dots[slideIndex-1].className += " active-dot";
+};
+
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+};
 
 // Function alert to thanks for downloading the CV//
 
 const alertDownload = () => {
     alert(`Thanks for downloading my CV - you'll be redirected to a new tab soon`)
     console.log('The button is clicked')
-}
-
+};
 
 // function to generate randowm color for the skills bars //
 
 // USe the button ti change the color of the whole classes of skills progress advancesd 
-const setBg = () => {
-    let changeColor = document.querySelectorAll('.skills-progress-advanced')
+function setBg() {
+    let changeColor = document.querySelectorAll('.skills-progress-advanced');
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
     for (let i = 0; i < changeColor.length; i++) {
         changeColor[i].style.backgroundColor = "#" + randomColor;
     }
 
-    console.log('this button is clicked')
+    console.log('this button is clicked');
 }
 
 //use the logic to change the background color of the intermeddiate skills
-
 
 let eventTrigger = document.getElementById('changeBackground')
 
