@@ -1,5 +1,4 @@
-console.log('Hello World')
-
+console.log("Hello World");
 
 // Create a function for the hamburger menu
 
@@ -20,12 +19,11 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
+const choices = document.querySelectorAll(".choice");
+const result = document.querySelector("#result");
 
-const choices = document.querySelectorAll('.choice');
-const result = document.querySelector('#result');
-
-choices.forEach(choice => {
-  choice.addEventListener('click', function() {
+choices.forEach((choice) => {
+  choice.addEventListener("click", function () {
     const computerChoice = getComputerChoice();
     const userChoice = this.id;
     const winner = getWinner(userChoice, computerChoice);
@@ -37,25 +35,25 @@ function getComputerChoice() {
   const random = Math.floor(Math.random() * 3);
   switch (random) {
     case 0:
-      return 'rock';
+      return "rock";
     case 1:
-      return 'paper';
+      return "paper";
     case 2:
-      return 'scissors';
+      return "scissors";
   }
 }
 
 function getWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
-    return 'Tie';
-  } else if (userChoice === 'rock' && computerChoice === 'paper') {
-    return 'Computer Wins';
-  } else if (userChoice === 'paper' && computerChoice === 'scissors') {
-    return 'Computer Wins';
-  } else if (userChoice === 'scissors' && computerChoice === 'rock') {
-    return 'Computer Wins';
+    return "Tie";
+  } else if (userChoice === "rock" && computerChoice === "paper") {
+    return "Computer Wins";
+  } else if (userChoice === "paper" && computerChoice === "scissors") {
+    return "Computer Wins";
+  } else if (userChoice === "scissors" && computerChoice === "rock") {
+    return "Computer Wins";
   } else {
-    return 'You Win';
+    return "You Win";
   }
 }
 
@@ -69,21 +67,19 @@ function showResult(winner, userChoice, computerChoice) {
 
 // Function type writting
 
-
 const typewriter = (element, text, speed) => {
-  window.addEventListener('load', () => {
-
-      let i = 0;
-      function type() {
-          if (i < text.length) {
-              element.innerHTML += text.charAt(i);
-              i++;
-              setTimeout(type, speed);
-          }
-      };
-      type();
+  window.addEventListener("load", () => {
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
   });
 };
 
-const target = document.querySelector('.typewriter');
-typewriter(target, 'Rock Paper Scissor', 200);
+const target = document.querySelector(".typewriter");
+typewriter(target, "Rock Paper Scissor", 200);

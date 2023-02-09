@@ -56,26 +56,6 @@ const alertDownload = () => {
     console.log('The button is clicked')
 };
 
-// Function for the newsletter bar:
-// document.querySelector("#accept-cookies-button").addEventListener("click", function() {
-//     document.cookie = "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
-//     document.querySelector(".cookie-container").style.display = "none";
-//     document.querySelector(".newsletter-bar").style.display = "block";
-//     setTimeout(function() {
-//       document.querySelector(".newsletter-bar").style.display = "none";
-//     }, 5000);
-//   });
-
-//   if (!document.cookie.includes("cookies-accepted=true")) {
-//     document.querySelector(".cookie-container").style.display = "block";
-//   } else {
-//     document.querySelector(".newsletter-bar").style.display = "block";
-//     setTimeout(function() {
-//       document.querySelector(".newsletter-bar").style.display = "none";
-//     }, 5000)
-      
-//   }
-
 // Check if cookies have been accepted
 if (document.cookie.indexOf("cookies-accepted=true") === -1) {
     // Show cookies banner
@@ -109,8 +89,6 @@ if (document.cookie.indexOf("cookies-accepted=true") === -1) {
       document.querySelector(".newsletter-bar").style.display = "none";
     }, 5000);
   }
-
-  
   
 // function to generate randowm color for the skills bars //
 

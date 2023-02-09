@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* Menu burger */
 
-@media only screen and (max-width: 430px){
-
-.sidenav {
+@media only screen and (max-width: 430px) {
+  .sidenav {
     height: 100%;
-    width:420px;
+    width: 420px;
     position: fixed;
     z-index: 4;
     top: 0;
@@ -15,7 +14,7 @@
     padding-top: 60px;
     transition: left 0.5s ease;
   }
-  
+
   /* Sidenav menu links */
   .sidenav a {
     padding: 8px 8px 8px 20px;
@@ -25,25 +24,24 @@
     display: block;
     transition: 0.6s ease-in-out;
   }
-  
+
   .sidenav a:hover {
     /* color: #111; */
-    color:#60BDF7;
+    color: #60bdf7;
     transition: color 0.4s ease-in-out;
-
   }
-  
+
   .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-  
+
   /* Active class */
   .sidenav.active {
     left: 0;
   }
-  
+
   /* Close btn */
   .sidenav .close {
     position: absolute;
@@ -66,94 +64,87 @@
 
 /* Iphone + * big size*/
 
-@media only screen and (max-width: 430px){
-    * {
-        font-family: 'Poppins';
-    }
-    body{
-        max-width: 450px;
-    }
+@media only screen and (max-width: 430px) {
+  * {
+    font-family: "Poppins";
+  }
+  body {
+    max-width: 450px;
+  }
 }
 
 /* TO be removed */
-@media only screen and (max-width: 430px){
-    nav {
-        display: none;
-    }
+@media only screen and (max-width: 430px) {
+  nav {
+    display: none;
+  }
 }
 
 /* TO to be removed foor desktop session */
-@media only screen and (min-width: 430px){
-    .hamburger-hidden {
-        display: none;
-    } 
+@media only screen and (min-width: 430px) {
+  .hamburger-hidden {
+    display: none;
+  }
 }
 
 /* Adjust the top menu */
 
-@media only screen and (max-width: 430px){
-
-header #top-menu{
+@media only screen and (max-width: 430px) {
+  header #top-menu {
     float: right;
     margin-right: 10px;
-    }
-   header #top-bar-mobile{
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        margin-top: 10px;
-    }
+  }
+  header #top-bar-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px;
+  }
 }
 
-@media only screen and (max-width: 430px){
-    .container{
-        max-width: 90%;
-        margin-top: 10vh;
-    }
+@media only screen and (max-width: 430px) {
+  .container {
+    max-width: 90%;
+    margin-top: 10vh;
+  }
 }
 
-@media only screen and (max-width: 430px){
-  
-  #top-black-banner h2{
+@media only screen and (max-width: 430px) {
+  #top-black-banner h2 {
     font-size: 2.5rem;
     color: white;
+  }
+
+  #top-black-banner {
+    margin: 10% auto 0 auto;
+    width: 100%;
+  }
+
+  #top-black-banner img {
+    width: 25%;
+  }
 }
-
-  #top-black-banner{
-  margin: 10% auto 0 auto;
-  width: 100%;
-}
-
-
-#top-black-banner img{
-  width: 25%;
-}
-
-}
-
 
 /* footer */
 
-@media only screen and (max-width: 430px){
-
-  footer{
+@media only screen and (max-width: 430px) {
+  footer {
     margin-top: 5vh;
   }
 
-  footer .footer-logo{
-      display: flex;
-      justify-content: center;
+  footer .footer-logo {
+    display: flex;
+    justify-content: center;
   }
 
-  .footer-credit-container{
-      display: flex;
-      flex-direction: column;
+  .footer-credit-container {
+    display: flex;
+    flex-direction: column;
   }
-  footer p{
-      margin: 0;
+  footer p {
+    margin: 0;
   }
   .footer-logo img {
-      margin: 20px;
+    margin: 20px;
   }
-
 }

@@ -326,8 +326,7 @@ h2 {
 
 /* news letter bar  and cookies bar*/
 
-
-  .newsletter-bar,
+.newsletter-bar,
   .cookie-container {
     position: fixed;
     bottom: 0;
@@ -338,19 +337,19 @@ h2 {
     z-index: 5; /* be carefull with this z index */
     left: 0;
     color: white;
-  }
+}
 
-  .cookie-container h2 {
+.cookie-container h2 {
     margin-bottom: 10px;
     font-size: 2rem;
-  } 
+} 
 
-  .cookie-container p{
+.cookie-container p{
     font-size: 2rem;
     margin-bottom: 10px;
-  }
+}
 
-  #accept-cookies-button{
+#accept-cookies-button{
     padding: 10px 20px;
     border-radius: 5px;
     background-color:  #ffa500;
@@ -359,24 +358,20 @@ h2 {
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 5px;
-  }
+}
 
   #accept-cookies-button:hover{
     background-color: #F2640A
-  }
+}
 
   #accept-cookies-button:active{
     background-color: #45F22E
-  }
-
-
+}
 
 .newsletter-bar p{
     font-size: 2rem;
     z-index: 2;
 }
-
-
 
 /* About me section */
 
@@ -465,8 +460,6 @@ h2 {
     font-weight: 400;
     }
     
-
-
 /* extand to 100% to push it to the next row */
 #professional-skills h2 {
     font-size: 2rem;
@@ -481,10 +474,10 @@ h2 {
     margin: 10px 0 
 }
 
-    .professional-skills-left,
+.professional-skills-left,
     .professional-skills-right {
         width: 50%;
-    }
+}
 
 .skills-small-box {
     width: 90%;
@@ -660,7 +653,6 @@ h2 {
             transform: translateY(20px);
   }
 
-
   .big-circle-skills{
     background-color:#4B86AB;
     border-radius:50%;
@@ -678,7 +670,6 @@ h2 {
     border-radius: 50%;
     height: 14px;
     width: 14px;
-
     /* adjust the left and the top if the height and width are amended */
     left: 27%;
     top: 26%;
@@ -745,7 +736,6 @@ h2 {
     height: 100px;
     float: left;
     margin-left: 11px;
-
 }
 
 /* Flex to adjust the title and the cercle together */
@@ -895,7 +885,7 @@ h2 {
      text-decoration: none;
      color:#16191B;
      font-size: 1.3rem;
-  }
+}
  
  #hidden3 li a:visited {
      color:#16191B;
@@ -986,7 +976,7 @@ h2 {
  
  #hidden5 li a:hover{
      color: #4B86AB;
- }
+}
 
  #hidden5 > ul li{
     font-size: 1.4rem;
@@ -1018,7 +1008,7 @@ h2 {
      text-decoration: none;
      color:#16191B;
      font-size: 1.3rem;
-  }
+}
  
  #hidden6 li a:visited {
      color:#16191B;

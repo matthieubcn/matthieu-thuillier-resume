@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Page</title>
 
-    <!-- CSS Links  -->
-    <link rel="stylesheet" href="../Css/style-calculator.css" />
-    <link rel="stylesheet" href="../Css/style-calculator-media-queries.css">
+  <!-- CSS Links  -->
+  <link rel="stylesheet" href="../Css/style-calculator.css" />
+  <link rel="stylesheet" href="../Css/style-calculator-media-queries.css">
 
-    <!-- External link to insert the smileys -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/emoji.css/dist/emoji.min.css" 
-    />
+  <!-- External link to insert the smileys -->
+  <link rel="stylesheet" href="https://unpkg.com/emoji.css/dist/emoji.min.css" />
 
-    
+
 </head>
 <body>
-    <header>
+  <header>
 
-        <div id="top-menu">
-          <span>Matthieu Thuillier</span>
-  
-          <nav>
-            <ul>
-              <li><a href="../index.html#about-me">About</a></li>
-              <li><a href="../index.html#professional-skills">Skills</a></li>
-              <li><a href="../index.html#work-experience">Experiences</a></li>
-              <li><a href="../index.html#education">Education</a></li>
-              <li><a href="../index.html#reference">References</a></li>
-              <li><a href="../pages-html/index-project.html">Project</a></li>
-              <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-  
-        <!-- Hamburger menu -->
-  
-        <div id="top-bar-mobile" class="'hamburger-hidden">
-  
-        <div id="mySidenav" class="sidenav hamburger-hidden">
-          <a id="closeBtn" href="#" class="close">×</a>
+    <div id="top-menu">
+      <span>Matthieu Thuillier</span>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html#about-me">About</a></li>
+          <li><a href="../index.html#professional-skills">Skills</a></li>
+          <li><a href="../index.html#work-experience">Experiences</a></li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li><a href="../index.html#reference">References</a></li>
+          <li><a href="../pages-html/index-project.html">Project</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hamburger menu -->
+
+    <div id="top-bar-mobile" class="'hamburger-hidden">
+
+      <div id="mySidenav" class="sidenav hamburger-hidden">
+        <a id="closeBtn" href="#" class="close">×</a>
         <ul>
           <li><a href="../index.html">About</a></li>
           <li><a href="./index-project.html">Skills</a></li>
@@ -54,65 +51,63 @@
         </ul>
       </div>
     </div>
-  
-        <a href="#" id="openBtn">
-          <span class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </a>
-      </div>
-    </header>
 
-<div id="top-black-banner" class="top-background">
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
+    </div>
+  </header>
+
+  <div id="top-black-banner" class="top-background">
     <h2 class="typewriter"></h2>
     <img src="../images/Calculator.png" alt='This is a Calculator'>
-</div>
+  </div>
 
-<main>
+  <main>
 
     <section class="container">
-        <div id="display"></div>
-        <div class="buttons">
-            <div class="button">C</div>
-            <div class="button">/</div>
-            <div class="button">*</div>
-            <div class="button">&larr;</div>
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button">+</div>
-            <div class="button">6</div>
-            <div class="button">5</div>
-            <div class="button">4</div>
-            <div class="button">-</div>
-            <div class="button">3</div>
-            <div class="button">2</div>
-            <div class="button">1</div>
-            <div class="button">.</div>
-            <div class="button">(</div>
-            <div class="button">0</div>
-            <div class="button">)</div>
+      <div id="display"></div>
+      <div class="buttons">
+        <div class="button">C</div>
+        <div class="button">/</div>
+        <div class="button">*</div>
+        <div class="button">&larr;</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button">+</div>
+        <div class="button">6</div>
+        <div class="button">5</div>
+        <div class="button">4</div>
+        <div class="button">-</div>
+        <div class="button">3</div>
+        <div class="button">2</div>
+        <div class="button">1</div>
+        <div class="button">.</div>
+        <div class="button">(</div>
+        <div class="button">0</div>
+        <div class="button">)</div>
 
-            <div id="equal"class="button">=</div>
+        <div id="equal" class="button">=</div>
 
-        </div>
+      </div>
 
     </section>
 
-</main>
+  </main>
 
 
-<footer>
+  <footer>
     <h3>Matthieu Thuillier</h3>
 
     <div class="footer-logo">
       <img src="../images/instagram.png" alt="this is a logo" />
-      <img
-        src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
-        alt="this is a logo"
-      />
+      <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
+        alt="this is a logo" />
       <img src="../images/github-mark.png" alt="this a git logo" />
     </div>
 
@@ -125,8 +120,8 @@
       </p>
     </div>
   </footer>
-<!-- link to script text -->
-<script src="../JavaScript/calculator-script.js"></script>
-    
+  <!-- link to script text -->
+  <script src="../JavaScript/calculator-script.js"></script>
+
 </body>
 </html>

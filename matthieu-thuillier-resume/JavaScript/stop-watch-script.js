@@ -1,5 +1,4 @@
-
-console.log('Hello World')
+console.log("Hello World");
 
 // Create a function for the hamburger menu
 
@@ -23,82 +22,73 @@ function closeNav() {
 // Fonction stop watch
 
 window.onload = function () {
-
   let seconds = 0;
-  let tens = 0
+  let tens = 0;
 
-  let secondsSpan = document.getElementById('seconds');
-  let tensSpan = document.getElementById('tens');
-  let buttonStart = document.getElementById('button-start');
-  let buttonStop = document.getElementById('button-stop');
-  let buttonReset = document.getElementById('button-reset');
-  let Interval
+  let secondsSpan = document.getElementById("seconds");
+  let tensSpan = document.getElementById("tens");
+  let buttonStart = document.getElementById("button-start");
+  let buttonStop = document.getElementById("button-stop");
+  let buttonReset = document.getElementById("button-reset");
+  let Interval;
 
+  buttonStart.onclick = function () {
+    clearInterval(Interval);
+    Interval = setInterval(setTimer, 10);
+  };
 
-buttonStart.onclick = function () {
-  clearInterval(Interval);
-     Interval = setInterval(setTimer, 10);
-}
+  buttonStop.onclick = function () {
+    clearInterval(Interval);
+  };
 
-  
-buttonStop.onclick = function() {
-  clearInterval(Interval);
-}
-
-
-buttonReset.onclick = function () {
-  clearInterval(Interval)
-  seconds = '00';
-  tens = '00';
-  secondsSpan.innerHTML = seconds;
-  tensSpan.innerHTML = tens;
-}
-
-const setTimer = () => {
-  tens++;
-      
-  if(tens <= 9){
-    tensSpan.innerHTML = "0" + tens;
-  }
-  
-  if (tens > 9){
-    tensSpan.innerHTML = tens;
-    
-  } 
-  
-  if (tens > 99) {
-    console.log("seconds");
-    seconds++;
-    secondsSpan.innerHTML = "0" + seconds;
-    tens = 0;
-    tensSpan.innerHTML = "0" + 0;
-  }
-  
-  if (seconds > 9){
+  buttonReset.onclick = function () {
+    clearInterval(Interval);
+    seconds = "00";
+    tens = "00";
     secondsSpan.innerHTML = seconds;
-  }
+    tensSpan.innerHTML = tens;
+  };
 
-}
-}
+  const setTimer = () => {
+    tens++;
+
+    if (tens <= 9) {
+      tensSpan.innerHTML = "0" + tens;
+    }
+
+    if (tens > 9) {
+      tensSpan.innerHTML = tens;
+    }
+
+    if (tens > 99) {
+      console.log("seconds");
+      seconds++;
+      secondsSpan.innerHTML = "0" + seconds;
+      tens = 0;
+      tensSpan.innerHTML = "0" + 0;
+    }
+
+    if (seconds > 9) {
+      secondsSpan.innerHTML = seconds;
+    }
+  };
+};
 
 // Function type writting
 
-
 const typewriter = (element, text, speed) => {
-  window.addEventListener('load', () => {
-
-      let i = 0;
-      function type() {
-          if (i < text.length) {
-              element.innerHTML += text.charAt(i);
-              i++;
-              setTimeout(type, speed);
-          }
-      };
-      type();
+  window.addEventListener("load", () => {
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
   });
 };
 
-const target = document.querySelector('.typewriter');
-typewriter(target, 'Enjoy our Stop-Watch', 200);
-
+const target = document.querySelector(".typewriter");
+typewriter(target, "Enjoy our Stop-Watch", 200);
