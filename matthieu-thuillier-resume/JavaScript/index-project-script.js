@@ -43,3 +43,23 @@ setTimeout(function(){
     surveyBar.style.display = "none";
   }
 }, 10000);
+
+
+
+let surveySubmitted = false;
+
+surveyForm.onsubmit = function(event) {
+  event.preventDefault();
+
+  if (!surveySubmitted) {
+    surveySubmitted = true;
+    for (var i = 0; i < radioButtons.length; i++) {
+      if (radioButtons[i].checked) {
+        alert("Thanks for taking the survey! Your rating is: " + radioButtons[i].value + " stars.");
+        break;
+      }
+    }
+  } else {
+    alert("You have already submitted the survey.");
+  }
+};
