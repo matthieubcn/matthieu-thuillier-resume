@@ -18,6 +18,7 @@ function closeNav() {
 }
 
 // Function survey
+Copy code
 let surveyBar = document.getElementById("survey-bar");
 let closeButton = document.getElementById("close-button");
 let surveyForm = document.getElementById("survey-form");
@@ -44,8 +45,6 @@ setTimeout(function(){
   }
 }, 10000);
 
-
-
 let surveySubmitted = false;
 
 surveyForm.onsubmit = function(event) {
@@ -56,6 +55,7 @@ surveyForm.onsubmit = function(event) {
     for (var i = 0; i < radioButtons.length; i++) {
       if (radioButtons[i].checked) {
         alert("Thanks for taking the survey! Your rating is: " + radioButtons[i].value + " stars.");
+        surveyBar.style.display = "none";
         break;
       }
     }
