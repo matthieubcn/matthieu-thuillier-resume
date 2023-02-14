@@ -355,143 +355,195 @@ const changeTextArea = () => {
 
 message.addEventListener('click', changeTextArea)
 
-// Create a fucntion to make the form dynamic and inform that all the fields are required before submitting the form
+// // Create a fucntion to make the form dynamic and inform that all the fields are required before submitting the form
+// let form = document.getElementById("contact-form");
+// form.addEventListener("submit", validateForm);
+
+// function validateForm() {
+
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let company = document.getElementById('company').value;
+//     let message = document.getElementById('message').value;
+//     let isValid = true;
+
+//     // Create a name function if the name is less or equal of 2 caracterers
+//     const newLocal = name.length <= 2;
+//     if (name == "" || newLocal ) {
+//         document.getElementById("nameError").innerHTML = "Name is required";
+//         isValid = false;
+//     } else {
+//         document.getElementById("nameError").innerHTML = "";
+//     }
+
+//     if (email == "") {
+//         document.getElementById("emailError").innerHTML = "Email is required";
+//         isValid = false;
+//     } else if (email.indexOf('@') === -1) {
+//         document.getElementById("emailError").innerHTML = "Email must contain an @";
+//         isValid =false
+//     } else {
+//         document.getElementById("emailError").innerHTML = "";
+//     }
+
+//     if (company == "") {
+//         document.getElementById("companyError").innerHTML = "Company name is required";
+//         isValid = false;
+
+//     } else {
+//         document.getElementById("companyError").innerHTML = "";
+
+//     } if (message == '') {
+//         document.getElementById('messageError').innerHTML ='Please send me a message'
+//     } else {
+//         document.getElementById("messageError").innerHTML =""
+//     }
+
+//     if (isValid) {
+//         alert(`All the fields are filled and the form has been sent properly`);
+//         console.log('the form has been sent');
+//         document.getElementById("allErrors").innerHTML=""
+
+//     } else {
+//         document.getElementById("allErrors").innerHTML="All fields are required"
+//     }
+//     return isValid;
+// }
 
 
-function validateForm(event) {
-    event.preventDefault();
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let company = document.getElementById('company').value;
-    let message = document.getElementById('message').value;
-    let isValid = true;
+// // Firebase
 
-    // Create a name function if the name is less or equal of 2 caracterers
-    const newLocal = name.length <= 2;
-    if (name == "" || newLocal ) {
-        document.getElementById("nameError").innerHTML = "Name is required";
-        isValid = false;
-    } else {
-        document.getElementById("nameError").innerHTML = "";
-    }
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCBocZPWsOGanKkINtinEh3Wy9HBce1ZU8",
+//     authDomain: "contact-form-cvmatthieu.firebaseapp.com",
+//     databaseURL: "https://contact-form-cvmatthieu-default-rtdb.firebaseio.com",
+//     projectId: "contact-form-cvmatthieu",
+//     storageBucket: "contact-form-cvmatthieu.appspot.com",
+//     messagingSenderId: "646772869591",
+//     appId: "1:646772869591:web:e55c2966a173db5d15e392"
+// };
+  
+// firebase.initializeApp(firebaseConfig);
 
-    if (email == "") {
-        document.getElementById("emailError").innerHTML = "Email is required";
-        isValid = false;
-    } else if (email.indexOf('@') === -1) {
-        document.getElementById("emailError").innerHTML = "Email must contain an @";
-        isValid =false
-    } else {
-        document.getElementById("emailError").innerHTML = "";
-    }
+// // Reference Message collection 
 
-    if (company == "") {
-        document.getElementById("companyError").innerHTML = "Company name is required";
-        isValid = false;
+// let messageRef = firebase.database().ref('message');
 
-    } else {
-        document.getElementById("companyError").innerHTML = "";
+// document.getElementById('contact-form').addEventListener('submit', submitForm)
 
-    } if (message == '') {
-        document.getElementById('messageError').innerHTML ='Please send me a message'
-    } else {
-        document.getElementById("messageError").innerHTML =""
-    }
+// function submitForm(e) {
+//     e.preventDefault();
+//     // Get the values 
 
-    if (isValid) {
-        alert(`All the fields are filled and the form has been sent properly`);
-        console.log('the form has been sent');
-        document.getElementById("allErrors").innerHTML=""
+//     let nameValue = getInputVal('name');
+//     let emailValue = getInputVal('email');
+//     let companyValue = getInputVal('company');
+//     let companySizeValue = getInputVal('companySize');
+//     let messageValue = getInputVal('message');
+//     console.log(nameValue,emailValue,companyValue,companySizeValue,messageValue);
+    
+//     saveMessage(nameValue,emailValue,companyValue,companySizeValue,messageValue)
+// }
 
-    } else {
-        document.getElementById("allErrors").innerHTML="All fields are required"
-    }
-    return isValid;
-}
+// function getInputVal(id) {
+//     return document.getElementById(id).value
+// }
+
+// // Save Message to firebase 
+
+// function saveMessage(nameValue, emailValue, companyValue, companySizeValue, messageValue) {
+//     let newMessageRef = messageRef.push();
+//     newMessageRef.set({
+//         nameValue: nameValue,
+//         emailValue: emailValue,
+//         companyValue: companyValue,
+//         conpanySizeValue: companySizeValue,
+//         messageValue:messageValue,
+//     });
+// }
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBlQZGwpr_dbOUalGkVaLT0kkctW8ucBXs",
-    authDomain: "cv-matthieu-form.firebaseapp.com",
-    databaseURL: "https://cv-matthieu-form-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "cv-matthieu-form",
-    storageBucket: "cv-matthieu-form.appspot.com",
-    messagingSenderId: "719188798728",
-    appId: "1:719188798728:web:c7752bee8a24b1f13250bd"
-    };
-
+    apiKey: "AIzaSyCBocZPWsOGanKkINtinEh3Wy9HBce1ZU8",
+    authDomain: "contact-form-cvmatthieu.firebaseapp.com",
+    databaseURL: "https://contact-form-cvmatthieu-default-rtdb.firebaseio.com",
+    projectId: "contact-form-cvmatthieu",
+    storageBucket: "contact-form-cvmatthieu.appspot.com",
+    messagingSenderId: "646772869591",
+    appId: "1:646772869591:web:e55c2966a173db5d15e392"
+};
+  
 firebase.initializeApp(firebaseConfig);
 
-// Get a reference to the Firebase database
-let database = firebase.database();
 
-// Get a reference to the form
-let form = document.getElementById("contact-form");
 
-// Add a submit event listener to the form
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
+// Listen for form submission
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent default form submission
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let company = document.getElementById('company').value;
+    let companySize =document.getElementById('companySize').value
+    let message = document.getElementById('message').value;
 
-  // Get the values of the form fields
-  let name1 = form.elements.name.value;
-  let email1 = form.elements.email.value;
-  let company1 = form.elements.company.value;
-  let companySize1 = form.elements.companySize.value;
-    let message1 = form.elements.message.value;
+    // Validate form
+    let isValid = true;
+    if (name.length <= 2 || name == "") {
+        document.getElementById('nameError').innerHTML = 'Name is required';
+        isValid = false;
+    } else {
+        document.getElementById('nameError').innerHTML = '';
+    }
 
-  // Save the form data to Firebase
-  database.ref("contact-form").push({
-    name1: name1,
-    email1: email1,
-    company1: company1,
-    companySize1: companySize1,
-    message1: message1
-  });
-    
-  console.log("Form data:", { name1, email1, company1, companySize1, message1 });
+    if (email == "") {
+        document.getElementById('emailError').innerHTML = 'Email is required';
+        isValid = false;
+    } else if (email.indexOf('@') === -1) {
+        document.getElementById('emailError').innerHTML = 'Email must contain an @';
+        isValid = false;
+    } else {
+        document.getElementById('emailError').innerHTML = '';
+    }
 
+    if (company == "") {
+        document.getElementById('companyError').innerHTML = 'Company name is required';
+        isValid = false;
+    } else {
+        document.getElementById('companyError').innerHTML = '';
+    }
+
+    if (message == '') {
+        document.getElementById('messageError').innerHTML = 'Please send me a message';
+        isValid = false;
+    } else {
+        document.getElementById('messageError').innerHTML = '';
+    }
+
+    // If form is valid, submit it and save data to Firebase
+    if (isValid) {
+        alert('All fields are filled and the form has been sent properly');
+        console.log('the form has been sent');
+        document.getElementById('allErrors').innerHTML = '';
+        saveToFirebase(name, email, company, companySize, message);
+        e.target.submit();
+    } else {
+        document.getElementById('allErrors').innerHTML = 'All fields are required';
+    }
 });
 
-// 
+// Save data to Firebase
+let messageRef = firebase.database().ref('message');
 
 
-// // reference your database
-// var contactFormDB = firebase.database().ref("contact-form");
-
-// document.getElementById("contact-form").addEventListener("submit", submitForm);
-
-// function submitForm(e) {
-//   e.preventDefault();
-
-// var name1 = getElementVal('name')
-// let email1 = getElementVal('email')
-// let company1 = getElementVal('company')
-// let companySize1 = getElementVal('company-size')
-// let message1 = getElementVal('message')
-    
-
-//     saveMessages(name1, email1, company1, companySize1, message1);
-    
-//     console.log(name1)
-
-//   //   reset the form
-//   document.getElementById("contact-form").reset();
-// }
-
-// const saveMessages = (name1, email1, company1, companySize1, message1) => {
-//   var newContactForm = contactFormDB.push();
-
-//   newContactForm.set({
-//     name1: name1,
-//     email1: email1,
-//     company1: company1,
-//     companySize1: companySize1,
-//     message1: message1,
-//   });
-// };
-
-// const getElementVal = (id) => {
-//   return document.getElementById(id).value;
-// };
-
+function saveToFirebase(name, email, company, companySize, message) {
+    const newLocal = messageRef.push();
+    let newMessageRef = newLocal;
+        newMessageRef.set({
+        name: name,
+        email: email,
+        company: company,
+        companySize: companySize,
+        message: message,
+    });
+}
 

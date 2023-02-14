@@ -18,7 +18,6 @@ function closeNav() {
 }
 
 // Function survey
-Copy code
 let surveyBar = document.getElementById("survey-bar");
 let closeButton = document.getElementById("close-button");
 let surveyForm = document.getElementById("survey-form");
