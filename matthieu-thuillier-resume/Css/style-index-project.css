@@ -60,6 +60,7 @@ header #top-menu {
 #top-menu nav li a {
   font-size: 1.5rem;
   text-decoration: none;
+  color: #808080;
 }
 
 #top-menu nav li a:visited {
@@ -281,8 +282,6 @@ label{
   margin-top: 20px;
   color: white; 
 }
-
-
 
 #submit-survey-button {
 padding: 10px 20px;

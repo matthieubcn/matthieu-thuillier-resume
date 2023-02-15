@@ -256,6 +256,9 @@
     float: left;
     margin-left: 14px;
   }
+
+.block-experience span {
+    font-size: 1.4rem;
 }
 
 /* Education form */
@@ -318,9 +321,6 @@
   #contact-form-container {
     margin-left: 20px;
     display: flex;
-  }
-  #contact h2 {
-    margin-left: 20px;
   }
 }
 
